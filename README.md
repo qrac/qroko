@@ -25,10 +25,6 @@ WordPress theme for headless CMS is minimal. You can use REST API and Gutenberg.
 | :-------: | :----: | :-----: | :----: |
 |  5.2.1~   | 7.2.9~ | 5.7.23~ | NGINX  |
 
-|   Gatsby   | Gridsome |    Nuxt    |
-| :--------: | :------: | :--------: |
-| Validating |  0.6.4~  | Validating |
-
 ## License
 
 - GNU General Public License v2.0 or late (100% GPL)

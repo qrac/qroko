@@ -3,9 +3,6 @@
 // Support
 //----------------------------------------------------
 
-// Support Gutenberg
-add_theme_support( 'wp-block-styles' );
-
 // Support title tag
 add_theme_support( 'title-tag' );
 
