@@ -1,0 +1,16 @@
+/* ---------------------------------------------------
+// Layouts: Grid
+//--------------------------------------------------*/
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid.is-middle {
+  align-items: center;
+}
+
+.grid.is-between {
+  justify-content: space-between;
+}

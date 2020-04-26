@@ -1,0 +1,12 @@
+/* ---------------------------------------------------
+// Modules: Article
+//--------------------------------------------------*/
+
+.article-header {
+  margin-bottom: 32px;
+}
+
+.article-title {
+  font-size: 2em;
+  font-weight: 700;
+}

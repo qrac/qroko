@@ -1,0 +1,24 @@
+/* ---------------------------------------------------
+// Bases: HTML
+//--------------------------------------------------*/
+
+body {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img[src$=".svg"] {
+  width: 100%;
+}
+
+iframe {
+  max-width: 100%;
+}
