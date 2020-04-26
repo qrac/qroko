@@ -12,6 +12,9 @@ remove_action( 'wp_head', 'wp_shortlink_wp_head' );
 // Remove version of WordPress
 remove_action( 'wp_head', 'wp_generator' );
 
+// Remove admin bar of site
+add_filter( 'show_admin_bar', '__return_false' );
+
 // Remove dns prefetch
 function remove_dns_prefetch( $hints, $relation_type ) {
   if ( 'dns-prefetch' === $relation_type ) {
