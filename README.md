@@ -4,14 +4,14 @@ WordPress theme for headless CMS
 
 ## About
 
-WordPress theme for headless CMS is minimal. You can use REST API and Gutenberg. After ... Add custom fields and custom posts to complete. The motif is Kuroko, which supports the backstage of Japan.
+Qroko is a theme for using WordPress as a headless CMS. You can use REST API and Gutenberg. You can also see a simple preview. After that ... I recommend adding custom fields and posts. The motif is Kuroko who supports the backstage of Japan.
 
 ## Detail
 
-- Minimal files and preview
-- Eliminate Japanese permalinks
 - Can use REST API
 - Can use Gutenberg
+- Minimal files and preview
+- Remove Japanese permalinks
 
 ## How To Use
 
