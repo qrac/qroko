@@ -14,9 +14,7 @@
       <?php while (have_posts()): the_post(); ?>
         <li>
           <a href="<?php the_permalink(); ?>">
-            <p>
-              <span><?php the_title(); ?></span>
-            </p>
+            <?php the_title(); ?>
           </a>
         </li>
       <?php endwhile; ?>

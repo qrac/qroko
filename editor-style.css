@@ -11,42 +11,39 @@ License URI: LICENSE
 */
 
 /*
-Package Name: new.css (Qroko Editor Style Custom)
-Package URL: https://github.com/xz/new.css
-License: MIT
-License URL: https://github.com/xz/new.css/blob/master/LICENSE
-Version: 1.1.3
+Project: Qroko Editor Style
+Base: new.css v1.1.3 - MIT (https://github.com/xz/new.css)
 */
 :root {
-  --nc-font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+  --qs-font-sans: "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --nc-font-mono: Consolas, monaco, "Ubuntu Mono", "Liberation Mono",
-    "Courier New", Courier, monospace;
-  --nc-tx-1: #000000;
-  --nc-tx-2: #1a1a1a;
-  --nc-bg-1: #ffffff;
-  --nc-bg-2: #f6f8fa;
-  --nc-bg-3: #e5e7eb;
-  --nc-lk-1: #0070f3;
-  --nc-lk-2: #0366d6;
-  --nc-lk-tx: #ffffff;
-  --nc-ac-1: #79ffe1;
-  --nc-ac-tx: #0c4047;
+  --qs-font-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    Meiryo, monospace, serif;
+  --qs-tx-1: #1a1a1a;
+  --qs-tx-2: #202020;
+  --qs-bg-1: #ffffff;
+  --qs-bg-2: #f6f8fa;
+  --qs-bg-3: #d1d8dc;
+  --qs-lk-1: #0070f3;
+  --qs-lk-2: #0366d6;
+  --qs-lk-tx: #ffffff;
+  --qs-ac-1: #79ffe1;
+  --qs-ac-tx: #0c4047;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --nc-tx-1: #ffffff;
-    --nc-tx-2: #eeeeee;
-    --nc-bg-1: #000000;
-    --nc-bg-2: #111111;
-    --nc-bg-3: #222222;
-    --nc-lk-1: #3291ff;
-    --nc-lk-2: #0070f3;
-    --nc-lk-tx: #ffffff;
-    --nc-ac-1: #7928ca;
-    --nc-ac-tx: #ffffff;
+    --qs-tx-1: #ffffff;
+    --qs-tx-2: #eeeeee;
+    --qs-bg-1: #000000;
+    --qs-bg-2: #111111;
+    --qs-bg-3: #222222;
+    --qs-lk-1: #3291ff;
+    --qs-lk-2: #0070f3;
+    --qs-lk-tx: #ffffff;
+    --qs-ac-1: #7928ca;
+    --qs-ac-tx: #ffffff;
   }
 }
 
@@ -54,91 +51,139 @@ html,
 input,
 select,
 button {
-  /* Set body font family and some finicky elements */
-  font-family: var(--nc-font-sans);
+  font-family: var(--qs-font-sans);
 }
 
 body {
-  color: var(--nc-tx-2);
-  font-size: 1.03rem;
+  background: var(--qs-bg-1);
+  color: var(--qs-tx-2);
   line-height: 1.5;
 }
 
 ::selection {
-  /* Set background color for selected text */
-  background: var(--nc-ac-1);
-  color: var(--nc-ac-tx);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1;
-  color: var(--nc-tx-1);
-  padding-top: 0.875rem;
-}
-
-h1,
-h2,
-h3 {
-  color: var(--nc-tx-1);
-  padding-bottom: 2px;
-  margin-bottom: 8px;
-  border-bottom: 1px solid var(--nc-bg-2);
-}
-
-h4,
-h5,
-h6 {
-  margin-bottom: 0.3rem;
+  background: var(--qs-ac-1);
+  color: var(--qs-ac-tx);
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 1.85rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 1.55rem;
-}
-
-h4 {
   font-size: 1.25rem;
 }
 
-h5 {
+h4 {
   font-size: 1rem;
 }
 
-h6 {
+h5 {
   font-size: 0.875rem;
 }
 
+h6 {
+  font-size: 0.75rem;
+}
+
+p {
+  line-height: 1.75;
+}
+
 a {
-  color: var(--nc-lk-1);
+  color: var(--qs-lk-1);
 }
 
 a:hover {
-  color: var(--nc-lk-2);
+  color: var(--qs-lk-2);
 }
 
 code,
 pre,
 kbd,
 samp {
-  /* Set the font family for monospaced elements */
-  font-family: var(--nc-font-mono);
+  font-family: var(--qs-font-mono);
 }
 
-/*
-Name: Qroko Editor Style
-*/
+ul,
+ol {
+  margin-left: 2rem;
+  padding-left: 0rem;
+}
+
 .editor-post-title__block .editor-post-title__input {
-  font-family: var(--nc-font-sans);
+  color: var(--qs-tx-1);
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--qs-font-sans);
+  font-feature-settings: "palt";
+  letter-spacing: 0.0125em;
+  line-height: 1.25;
+}
+
+.wp-block-quote {
+  padding: 1.5rem;
+  background: var(--qs-bg-2);
+  border-left: 5px solid var(--qs-bg-3);
+}
+
+.wp-block-quote .wp-block-quote__citation {
+  color: var(--qs-tx-2);
+  font-size: 0.875rem;
+  opacity: 0.65;
+}
+
+.block-editor-rich-text__editable code {
+  background: var(--qs-bg-2);
+  border: 1px solid var(--qs-bg-3);
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-size: 0.9rem;
+}
+
+.wp-block-code,
+.wp-block-code textarea {
+  background: var(--qs-bg-2);
+}
+
+.wp-block-code textarea {
+  color: var(--qs-tx-2);
+  font-size: 0.9rem;
+}
+
+.wp-block-table table thead {
+  border-bottom: none;
+}
+
+.wp-block-table table th {
+  background: var(--qs-bg-2);
+}
+
+.wp-block-table table td,
+.wp-block-table table th {
+  padding: 0.5rem;
+  border: 1px solid var(--qs-bg-3);
+}
+
+.wp-block-table table tfoot {
+  border-top: 2px solid var(--qs-bg-3);
+}
+
+.wp-block-table figcaption {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--qs-tx-2);
+  font-size: 0.875rem;
+  opacity: 0.65;
+}
+
+.wp-block-image figcaption {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--qs-tx-2);
+  font-size: 0.875rem;
+  opacity: 0.65;
 }

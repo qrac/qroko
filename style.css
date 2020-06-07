@@ -12,47 +12,43 @@ License URI: LICENSE
 */
 
 /*
-Package Name: new.css
-Package URL: https://github.com/xz/new.css
-License: MIT
-License URL: https://github.com/xz/new.css/blob/master/LICENSE
-Version: 1.1.3
+Project: Qroko Style
+Base: new.css v1.1.3 - MIT (https://github.com/xz/new.css)
 */
 :root {
-  --nc-font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+  --qs-font-sans: "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --nc-font-mono: Consolas, monaco, "Ubuntu Mono", "Liberation Mono",
-    "Courier New", Courier, monospace;
-  --nc-tx-1: #000000;
-  --nc-tx-2: #1a1a1a;
-  --nc-bg-1: #ffffff;
-  --nc-bg-2: #f6f8fa;
-  --nc-bg-3: #e5e7eb;
-  --nc-lk-1: #0070f3;
-  --nc-lk-2: #0366d6;
-  --nc-lk-tx: #ffffff;
-  --nc-ac-1: #79ffe1;
-  --nc-ac-tx: #0c4047;
+  --qs-font-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    Meiryo, monospace, serif;
+  --qs-tx-1: #1a1a1a;
+  --qs-tx-2: #202020;
+  --qs-bg-1: #ffffff;
+  --qs-bg-2: #f6f8fa;
+  --qs-bg-3: #d1d8dc;
+  --qs-lk-1: #0070f3;
+  --qs-lk-2: #0366d6;
+  --qs-lk-tx: #ffffff;
+  --qs-ac-1: #79ffe1;
+  --qs-ac-tx: #0c4047;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --nc-tx-1: #ffffff;
-    --nc-tx-2: #eeeeee;
-    --nc-bg-1: #000000;
-    --nc-bg-2: #111111;
-    --nc-bg-3: #222222;
-    --nc-lk-1: #3291ff;
-    --nc-lk-2: #0070f3;
-    --nc-lk-tx: #ffffff;
-    --nc-ac-1: #7928ca;
-    --nc-ac-tx: #ffffff;
+    --qs-tx-1: #ffffff;
+    --qs-tx-2: #eeeeee;
+    --qs-bg-1: #000000;
+    --qs-bg-2: #111111;
+    --qs-bg-3: #222222;
+    --qs-lk-1: #3291ff;
+    --qs-lk-2: #0070f3;
+    --qs-lk-tx: #ffffff;
+    --qs-ac-1: #7928ca;
+    --qs-ac-tx: #ffffff;
   }
 }
 
 * {
-  /* Reset margins and padding */
   margin: 0;
   padding: 0;
 }
@@ -87,39 +83,35 @@ table,
 textarea,
 ul,
 video {
-  /* Margins for most elements */
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 html,
 input,
 select,
 button {
-  /* Set body font family and some finicky elements */
-  font-family: var(--nc-font-sans);
+  font-family: var(--qs-font-sans);
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  /* Center body in page */
-  margin: 0 auto;
   max-width: 750px;
+  margin: 0 auto;
   padding: 2rem;
-  border-radius: 6px;
-  overflow-x: hidden;
+  background: var(--qs-bg-1);
   word-break: break-word;
-  overflow-wrap: break-word;
-  background: var(--nc-bg-1);
-
-  /* Main body text */
-  color: var(--nc-tx-2);
-  font-size: 1.03rem;
+  color: var(--qs-tx-2);
   line-height: 1.5;
 }
 
 ::selection {
-  /* Set background color for selected text */
-  background: var(--nc-ac-1);
-  color: var(--nc-ac-tx);
+  background: var(--qs-ac-1);
+  color: var(--qs-ac-tx);
 }
 
 h1,
@@ -128,104 +120,96 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1;
-  color: var(--nc-tx-1);
-  padding-top: 0.875rem;
+  padding-top: 0.75rem;
+  color: var(--qs-tx-1);
+  font-weight: 600;
+  font-feature-settings: "palt";
+  letter-spacing: 0.0125em;
+  line-height: 1.25;
 }
 
 h1,
 h2,
 h3 {
-  color: var(--nc-tx-1);
-  padding-bottom: 2px;
-  margin-bottom: 8px;
-  border-bottom: 1px solid var(--nc-bg-2);
+  color: var(--qs-tx-1);
+  margin-bottom: 0.75rem;
 }
 
 h4,
 h5,
 h6 {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.75rem;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 1.85rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 1.55rem;
-}
-
-h4 {
   font-size: 1.25rem;
 }
 
-h5 {
+h4 {
   font-size: 1rem;
 }
 
-h6 {
+h5 {
   font-size: 0.875rem;
 }
 
+h6 {
+  font-size: 0.75rem;
+}
+
+p {
+  line-height: 1.75;
+}
+
 a {
-  color: var(--nc-lk-1);
+  color: var(--qs-lk-1);
 }
 
 a:hover {
-  color: var(--nc-lk-2);
+  color: var(--qs-lk-2);
 }
 
-abbr:hover {
-  /* Set the '?' cursor while hovering an abbreviation */
-  cursor: help;
-}
-
-blockquote {
+blockquote,
+blockquote.wp-block-quote {
+  margin-bottom: 1.25rem;
   padding: 1.5rem;
-  background: var(--nc-bg-2);
-  border-left: 5px solid var(--nc-bg-3);
+  background: var(--qs-bg-2);
+  border-left: 5px solid var(--qs-bg-3);
 }
 
-abbr {
-  cursor: help;
+blockquote cite,
+blockquote.wp-block-quote cite {
+  color: var(--qs-tx-2);
+  font-size: 0.875rem;
+  opacity: 0.65;
 }
 
 blockquote *:last-child {
-  padding-bottom: 0;
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 header {
-  background: var(--nc-bg-2);
-  border-bottom: 1px solid var(--nc-bg-3);
-  padding: 2rem 1.5rem;
-
-  /* This sets the right and left margins to cancel out the body's margins. It's width is still the same, but the background stretches across the page's width. */
-
   margin: -2rem calc(0px - (50vw - 50%)) 2rem;
-
-  /* Shorthand for:
-
-	margin-top: -2rem;
-	margin-bottom: 2rem;
-
-	margin-left: calc(0px - (50vw - 50%));
-	margin-right: calc(0px - (50vw - 50%)); */
-
+  padding: 2rem 1.5rem;
   padding-left: calc(50vw - 50%);
   padding-right: calc(50vw - 50%);
+  background: var(--qs-bg-2);
+  border-bottom: 1px solid var(--qs-bg-3);
 }
 
 header h1,
 header h2,
 header h3 {
   padding-bottom: 0;
-  border-bottom: 0;
 }
 
 header > *:first-child {
@@ -242,19 +226,18 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  font-size: 1rem;
+  cursor: pointer;
   display: inline-block;
   padding: 6px 12px;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  background: var(--nc-lk-1);
-  color: var(--nc-lk-tx);
+  background: var(--qs-lk-1);
   border: 0;
   border-radius: 4px;
   box-sizing: border-box;
-  cursor: pointer;
-  color: var(--nc-lk-tx);
+  font-size: 1rem;
+  color: var(--qs-lk-tx);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 a button[disabled],
@@ -263,10 +246,8 @@ input[type="submit"][disabled],
 input[type="reset"][disabled],
 input[type="button"][disabled] {
   cursor: default;
-  opacity: 0.5;
-
-  /* Set the [X] cursor while hovering a disabled link */
   cursor: not-allowed;
+  opacity: 0.5;
 }
 
 .button:focus,
@@ -279,87 +260,82 @@ input[type="reset"]:focus,
 input[type="reset"]:hover,
 input[type="button"]:focus,
 input[type="button"]:hover {
-  background: var(--nc-lk-2);
+  background: var(--qs-lk-2);
 }
 
 code,
 pre,
 kbd,
 samp {
-  /* Set the font family for monospaced elements */
-  font-family: var(--nc-font-mono);
+  font-family: var(--qs-font-mono);
 }
 
 code,
 samp,
 kbd,
 pre {
-  /* The main preformatted style. This is changed slightly across different cases. */
-  background: var(--nc-bg-2);
-  border: 1px solid var(--nc-bg-3);
-  border-radius: 4px;
   padding: 3px 6px;
+  background: var(--qs-bg-2);
+  border: 1px solid var(--qs-bg-3);
+  border-radius: 4px;
   font-size: 0.9rem;
 }
 
 kbd {
-  /* Makes the kbd element look like a keyboard key */
-  border-bottom: 3px solid var(--nc-bg-3);
+  border-bottom: 3px solid var(--qs-bg-3);
 }
 
 pre {
-  padding: 1rem 1.4rem;
   max-width: 100%;
+  padding: 1rem 1.4rem;
   overflow: auto;
 }
 
+pre,
+pre.wp-block-code {
+  color: var(--qs-tx-2);
+}
+
 pre code {
-  /* When <code> is in a <pre>, reset it's formatting to blend in */
-  background: inherit;
-  font-size: inherit;
-  color: inherit;
-  border: 0;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  background: inherit;
+  border: 0;
+  color: inherit;
+  font-size: inherit;
 }
 
 code pre {
-  /* When <pre> is in a <code>, reset it's formatting to blend in */
   display: inline;
-  background: inherit;
-  font-size: inherit;
-  color: inherit;
-  border: 0;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  background: inherit;
+  border: 0;
+  color: inherit;
+  font-size: inherit;
 }
 
 details {
-  /* Make the <details> look more "clickable" */
   padding: 0.6rem 1rem;
-  background: var(--nc-bg-2);
-  border: 1px solid var(--nc-bg-3);
+  background: var(--qs-bg-2);
+  border: 1px solid var(--qs-bg-3);
   border-radius: 4px;
 }
 
 summary {
-  /* Makes the <summary> look more like a "clickable" link with the pointer cursor */
   cursor: pointer;
   font-weight: bold;
 }
 
 details[open] {
-  /* Adjust the <details> padding while open */
   padding-bottom: 0.75rem;
 }
 
 details[open] summary {
-  /* Adjust the <details> padding while open */
   margin-bottom: 6px;
 }
 
 details[open] > *:last-child {
-  /* Resets the bottom margin of the last element in the <details> while <details> is opened. This prevents double margins/paddings. */
   margin-bottom: 0;
 }
 
@@ -368,21 +344,19 @@ dt {
 }
 
 dd::before {
-  /* Add an arrow to data table definitions */
   content: "→ ";
 }
 
 hr {
-  /* Reset the border of the <hr> separator, then set a better line */
-  border: 0;
-  border-bottom: 1px solid var(--nc-bg-3);
   margin: 1rem auto;
+  border: 0;
+  border-bottom: 1px solid var(--qs-bg-3);
 }
 
 fieldset {
   margin-top: 1rem;
   padding: 2rem;
-  border: 1px solid var(--nc-bg-3);
+  border: 1px solid var(--qs-bg-3);
   border-radius: 4px;
 }
 
@@ -390,41 +364,65 @@ legend {
   padding: auto 0.5rem;
 }
 
-table {
-  /* border-collapse sets the table's elements to share borders, rather than floating as separate "boxes". */
+table,
+.wp-block-table table {
   border-collapse: collapse;
   width: 100%;
 }
 
-td,
-th {
-  border: 1px solid var(--nc-bg-3);
-  text-align: left;
+table thead,
+.wp-block-table table thead {
+  border-bottom: none;
+}
+
+table thead th,
+.wp-block-table table thead th {
+  text-align: center;
+}
+
+table td,
+table th,
+.wp-block-table table td,
+.wp-block-table table th {
   padding: 0.5rem;
+  border: 1px solid var(--qs-bg-3);
 }
 
-th {
-  background: var(--nc-bg-2);
+table th,
+.wp-block-table table th {
+  background: var(--qs-bg-2);
 }
 
-tr:nth-child(even) {
-  /* Set every other cell slightly darker. Improves readability. */
-  background: var(--nc-bg-2);
-}
-
-table caption {
-  font-weight: bold;
+table caption,
+.wp-block-table table caption {
   margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+table tfoot,
+.wp-block-table table tfoot {
+  border-top: 2px solid var(--qs-bg-3);
+}
+
+figure table {
+  margin-bottom: 0;
+}
+
+figure figcaption,
+figure.wp-block-table figcaption {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--qs-tx-2);
+  font-size: 0.875rem;
+  opacity: 0.65;
 }
 
 textarea {
-  /* Don't let the <textarea> extend off the screen naturally or when dragged by the user */
   max-width: 100%;
 }
 
 ol,
 ul {
-  /* Replace the browser default padding */
   padding-left: 2rem;
 }
 
@@ -439,29 +437,42 @@ ol ol {
   margin-bottom: 0;
 }
 
+li p {
+  margin-bottom: 0;
+}
+
 mark {
   padding: 3px 6px;
-  background: var(--nc-ac-1);
-  color: var(--nc-ac-tx);
+  background: var(--qs-ac-1);
+  color: var(--qs-ac-tx);
 }
 
 textarea,
 select,
 input {
-  padding: 6px 12px;
   margin-bottom: 0.5rem;
-  background: var(--nc-bg-2);
-  color: var(--nc-tx-2);
-  border: 1px solid var(--nc-bg-3);
+  padding: 6px 12px;
+  background: var(--qs-bg-2);
+  border: 1px solid var(--qs-bg-3);
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
+  color: var(--qs-tx-2);
 }
 
 img {
   max-width: 100%;
 }
 
-/*
-Name: Qroko Style
-*/
+figure img {
+  margin-bottom: 0;
+}
+
+figure figcaption,
+figure.wp-block-image figcaption {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--qs-tx-2);
+  font-size: 0.875rem;
+  opacity: 0.65;
+}
