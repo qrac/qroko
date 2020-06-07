@@ -40,10 +40,10 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 
 - [WP Pusher](https://wppusher.com/)
 - [WPGraphQL](https://www.wpgraphql.com/)
-  - [Github | wp-graphql/wp-graphql](https://github.com/wp-graphql/wp-graphql)
-  - [Github | wp-graphql/wp-graphiql](https://github.com/wp-graphql/wp-graphiql)
+  - [GitHub | wp-graphql/wp-graphql](https://github.com/wp-graphql/wp-graphql)
+  - [GitHub | wp-graphql/wp-graphiql](https://github.com/wp-graphql/wp-graphiql)
 - [WpGraphQL Gutenberg](https://wp-graphql-gutenberg.netlify.app/)
-  - [Github | pristas-peter/wp-graphql-gutenberg](https://github.com/pristas-peter/wp-graphql-gutenberg)
+  - [GitHub | pristas-peter/wp-graphql-gutenberg](https://github.com/pristas-peter/wp-graphql-gutenberg)
 
 ## License
 
