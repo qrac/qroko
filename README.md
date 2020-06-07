@@ -21,11 +21,29 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 - 最低限の投稿プレビュー
 - 日本語パーマリンクの生成を防ぐ
 
-## How to Use
+## Basic Setting
 
-1. WordPress テーマを[ダウンロード](https://github.com/qrac/qroko/archive/master.zip)
-2. Zip ファイルを WordPress theme としてインストール
-3. アクティベート
+1. Zip ファイルを[ダウンロード](https://github.com/qrac/qroko/archive/master.zip)
+2. Zip ファイルを WordPress テーマとしてインストール＞
+3. テーマ「Qroko」を有効化
+
+## Advanced Setting
+
+1. WP Pusher を[公式サイト](https://wppusher.com/) からダウンロード
+2. WP Pusher をプラグインとしてインストール・有効化
+3. WP Pusher で GitHub 上のテーマ「qrac/qroko」をインストール・有効化
+4. WP Pusher で GitHub 上のプラグイン「wp-graphql/wp-graphql」のブランチ「develop」をインストール・有効化
+5. WP Pusher で GitHub 上のプラグイン「wp-graphql/wp-graphiql」をインストール・有効化
+6. WP Pusher で GitHub 上のプラグイン「pristas-peter/wp-graphql-gutenberg」のブランチ「develop」をインストール・有効化
+7. WordPress 管理画面の「GraphQL Gutenberg」で「Update block registry」を Update
+8. WordPress 管理画面の「Graphiql」で blocks のデータが取得できるか確認
+
+- [WP Pusher](https://wppusher.com/)
+- [WPGraphQL](https://www.wpgraphql.com/)
+  - [Github | wp-graphql/wp-graphql](https://github.com/wp-graphql/wp-graphql)
+  - [Github | wp-graphql/wp-graphiql](https://github.com/wp-graphql/wp-graphiql)
+- [WpGraphQL Gutenberg](https://wp-graphql-gutenberg.netlify.app/)
+  - [Github | pristas-peter/wp-graphql-gutenberg](https://github.com/pristas-peter/wp-graphql-gutenberg)
 
 ## License
 
