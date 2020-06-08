@@ -38,9 +38,31 @@ function admin_custom_favicon() {
 }
 add_action('admin_head', 'admin_custom_favicon');
 
-// Change Menu Label
-function change_menu_label() {
-  $label_acf = get_option('custom_admin_label_acf');
+// Admin Remove Bar Menu
+function admin_remove_bar_menus( $wp_admin_bar ) {
+  $hidden_comments = get_option('hidden_admin_label_comments');
+
+  if ($hidden_comments) {
+    $wp_admin_bar->remove_menu( 'comments' );
+  }
+}
+add_action( 'admin_bar_menu', 'admin_remove_bar_menus', 99 );
+
+// Admin Remove Menu
+function admin_remove_menus () {
+  $hidden_comments = get_option('hidden_admin_label_comments');
+
+  global $menu;
+
+  if ($hidden_comments) {
+    unset($menu[25]); // コメント
+  }
+}
+add_action('admin_menu', 'admin_remove_menus');
+
+// Admin Custom Menu Label
+function admin_custom_menu_label() {
+  $label_acf = get_option('admin_label_acf');
 
   global $menu;
   global $submenu;
@@ -51,4 +73,4 @@ function change_menu_label() {
     $menu['80.025'][0] = $label_acf;
   }
 }
-add_action( 'admin_menu', 'change_menu_label' );
+add_action( 'admin_menu', 'admin_custom_menu_label' );

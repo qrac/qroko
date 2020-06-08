@@ -44,22 +44,34 @@ function add_theme_customizer($wp_customize) {
   )));
 
   // Custom Admin
-  $wp_customize->add_section('custom_admin_section', array(
+  $wp_customize->add_section('admin_section', array(
     'title' => '管理画面の設定',
     'description' => '',
     'priority' => 199
   ));
-  $wp_customize->add_setting('custom_admin_label_acf', array(
+  $wp_customize->add_setting('hidden_admin_label_comments', array(
     'default' => null,
     'type' => 'option'
   ));
-  $wp_customize->add_control('custom_admin_label_acf', array(
-    'label' => 'ラベル：ACF',
-    'description' => 'Advanced Custom Fieldsのメニュー名「カスタムフィールド」を上書きできます。',
-    'section' => 'custom_admin_section',
-    'settings' => 'custom_admin_label_acf',
+  $wp_customize->add_control('hidden_admin_label_comments', array(
+    'label' => 'コメントを非表示',
+    'description' => '',
+    'section' => 'admin_section',
+    'settings' => 'hidden_admin_label_comments',
+    'type' => 'checkbox',
+    'priority' => 11
+  ));
+  $wp_customize->add_setting('admin_label_acf', array(
+    'default' => null,
+    'type' => 'option'
+  ));
+  $wp_customize->add_control('admin_label_acf', array(
+    'label' => 'Advanced Custom Fields',
+    'description' => '管理画面のメニュー「カスタムフィールド」を上書きできます。',
+    'section' => 'admin_section',
+    'settings' => 'admin_label_acf',
     'type' => 'text',
-    'priority' => 10
+    'priority' => 13
   ));
 }
 add_action('customize_register', 'add_theme_customizer');
