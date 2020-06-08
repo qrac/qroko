@@ -43,11 +43,42 @@ function add_theme_customizer($wp_customize) {
     'priority' => 12
   )));
 
+  // Redirect
+  $wp_customize->add_section('redirect_section', array(
+    'title' => 'リダイレクト設定',
+    'description' => 'ログインユーザー以外が表示サイトにアクセスした場合に301リダイレクトを行います。',
+    'priority' => 28
+  ));
+  $wp_customize->add_setting('redirect_url', array(
+    'default' => null,
+    'type' => 'option'
+  ));
+  $wp_customize->add_control('redirect_url', array(
+    'label' => 'リダイレクト先URL',
+    'description' => '',
+    'section' => 'redirect_section',
+    'settings' => 'redirect_url',
+    'type' => 'url',
+    'priority' => 10
+  ));
+  $wp_customize->add_setting('active_redirect', array(
+    'default' => false,
+    'type' => 'option'
+  ));
+  $wp_customize->add_control('active_redirect', array(
+    'label' => 'リダイレクトを有効化',
+    'description' => '',
+    'section' => 'redirect_section',
+    'settings' => 'active_redirect',
+    'type' => 'checkbox',
+    'priority' => 11
+  ));
+
   // Preview
   $wp_customize->add_section('preview_section', array(
-    'title' => 'プレビューの設定',
+    'title' => 'プレビュー設定',
     'description' => '',
-    'priority' => 28
+    'priority' => 29
   ));
   $wp_customize->add_setting('preview_body_max_width', array(
     'default' => 750,
@@ -69,7 +100,7 @@ function add_theme_customizer($wp_customize) {
   $wp_customize->add_section('admin_section', array(
     'title' => '管理画面の設定',
     'description' => '',
-    'priority' => 29
+    'priority' => 30
   ));
   $wp_customize->add_setting('hidden_admin_label_comments', array(
     'default' => true,
