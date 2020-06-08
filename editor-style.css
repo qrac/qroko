@@ -58,6 +58,7 @@ button {
 body {
   background: var(--qs-bg-1);
   color: var(--qs-tx-2);
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -114,6 +115,7 @@ h6 {
 }
 
 p {
+  font-size: 1rem;
   line-height: 1.75;
 }
 
@@ -135,7 +137,7 @@ samp {
 ul,
 ol {
   margin-left: 2rem;
-  padding-left: 0rem;
+  padding-left: 0;
 }
 
 .editor-post-title__block .editor-post-title__input {
@@ -146,6 +148,7 @@ ol {
   font-feature-settings: "palt";
   letter-spacing: 0.0125em;
   line-height: 1.25;
+  word-break: break-word;
 }
 
 .wp-block-quote {
