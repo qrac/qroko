@@ -11,11 +11,12 @@ add_action( 'customize_register', 'remove_theme_customizer' );
 
 // Add Theme Customizer
 function add_theme_customizer($wp_customize) {
+
   // Logo, Icon
   $wp_customize   -> add_section( 'logo_section', array(
     'title'       => 'ロゴ・アイコン',
+    'description' => '',
     'priority'    => 27,
-    'description' => 'サイトで利用するロゴ・アイコンの設定。',
   ));
   $wp_customize   -> add_setting('logo_url');
   $wp_customize   -> add_control( new WP_Customize_Image_Control( $wp_customize, 'logo_url', array(
@@ -41,6 +42,25 @@ function add_theme_customizer($wp_customize) {
     'description' => 'ファビコンとして設定されます。',
     'priority' => 12
   )));
+
+  // Custom Admin
+  $wp_customize->add_section('custom_admin_section', array(
+    'title' => '管理画面の設定',
+    'description' => '',
+    'priority' => 199
+  ));
+  $wp_customize->add_setting('custom_admin_label_acf', array(
+    'default' => null,
+    'type' => 'option'
+  ));
+  $wp_customize->add_control('custom_admin_label_acf', array(
+    'label' => 'ラベル：ACF',
+    'description' => 'Advanced Custom Fieldsのメニュー名「カスタムフィールド」を上書きできます。',
+    'section' => 'custom_admin_section',
+    'settings' => 'custom_admin_label_acf',
+    'type' => 'text',
+    'priority' => 10
+  ));
 }
 add_action('customize_register', 'add_theme_customizer');
 

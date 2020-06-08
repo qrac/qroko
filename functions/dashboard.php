@@ -37,3 +37,18 @@ function admin_custom_favicon() {
   }
 }
 add_action('admin_head', 'admin_custom_favicon');
+
+// Change Menu Label
+function change_menu_label() {
+  $label_acf = get_option('custom_admin_label_acf');
+
+  global $menu;
+  global $submenu;
+  //var_dump($menu);
+  //var_dump($submenu);
+
+  if ($label_acf) {
+    $menu['80.025'][0] = $label_acf;
+  }
+}
+add_action( 'admin_menu', 'change_menu_label' );
