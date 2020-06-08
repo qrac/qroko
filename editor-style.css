@@ -76,12 +76,17 @@ h3,
 h4,
 h5,
 h6 {
-  padding-top: 0.75rem;
+  padding-top: 1rem;
   color: var(--qs-tx-1);
   font-weight: 600;
   font-feature-settings: "palt";
   letter-spacing: 0.0125em;
   line-height: 1.25;
+}
+
+h2 {
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--qs-bg-3);
 }
 
 h1 {

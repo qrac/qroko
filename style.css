@@ -121,7 +121,8 @@ h3,
 h4,
 h5,
 h6 {
-  padding-top: 0.75rem;
+  padding-top: 1rem;
+  padding-bottom: 0.25rem;
   color: var(--qs-tx-1);
   font-weight: 600;
   font-feature-settings: "palt";
@@ -133,13 +134,17 @@ h1,
 h2,
 h3 {
   color: var(--qs-tx-1);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 h4,
 h5,
 h6 {
   margin-bottom: 0.75rem;
+}
+
+h2 {
+  border-bottom: 1px solid var(--qs-bg-3);
 }
 
 h1 {
