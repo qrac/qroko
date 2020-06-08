@@ -16,6 +16,7 @@
       <?php endif; ?>
       <?php the_content(); ?>
     <?php endwhile; ?>
+    <?php wp_link_pages(); ?>
   <?php endif; ?>
   <?php get_template_part('components/app-footer'); ?>
 </body>

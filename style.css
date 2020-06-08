@@ -483,3 +483,9 @@ figure.wp-block-image figcaption {
   font-size: 0.875rem;
   opacity: 0.65;
 }
+
+.pagination,
+.pager {
+  padding-top: 1rem;
+  border-top: 1px solid var(--qs-bg-3);
+}
