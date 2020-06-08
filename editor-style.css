@@ -20,6 +20,7 @@ Base: new.css v1.1.3 - MIT (https://github.com/xz/new.css)
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --qs-font-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
     Meiryo, monospace, serif;
+  --qs-site-width: 620px;
   --qs-tx-1: #1a1a1a;
   --qs-tx-2: #202020;
   --qs-bg-1: #ffffff;
@@ -60,9 +61,27 @@ body {
   line-height: 1.5;
 }
 
+.wp-block {
+  max-width: var(--qs-site-width);
+}
+
 ::selection {
   background: var(--qs-ac-1);
   color: var(--qs-ac-tx);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-top: 0.75rem;
+  color: var(--qs-tx-1);
+  font-weight: 600;
+  font-feature-settings: "palt";
+  letter-spacing: 0.0125em;
+  line-height: 1.25;
 }
 
 h1 {

@@ -26,3 +26,17 @@ function wp_head_custom_favicon() {
   }
 }
 add_action('wp_head', 'wp_head_custom_favicon');
+
+// WP Head Custom Body Max Width
+function wp_head_custom_body_max_width() {
+  $body_max_width = get_option('preview_body_max_width');
+
+  if($body_max_width != 620 && $body_max_width != null && $body_max_width > 0) {
+    echo '<style>' .
+      ':root body { --qs-site-width: ' .
+      $body_max_width .
+      'px; }' .
+      '</style>';
+  }
+}
+add_action('wp_head', 'wp_head_custom_body_max_width');

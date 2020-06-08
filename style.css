@@ -21,6 +21,7 @@ Base: new.css v1.1.3 - MIT (https://github.com/xz/new.css)
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --qs-font-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
     Meiryo, monospace, serif;
+  --qs-site-width: 620px;
   --qs-tx-1: #1a1a1a;
   --qs-tx-2: #202020;
   --qs-bg-1: #ffffff;
@@ -100,9 +101,9 @@ html {
 }
 
 body {
-  max-width: 750px;
+  max-width: var(--qs-site-width);
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   background: var(--qs-bg-1);
   word-break: break-word;
   color: var(--qs-tx-2);
@@ -198,8 +199,8 @@ blockquote *:last-child {
 }
 
 header {
-  margin: -2rem calc(0px - (50vw - 50%)) 2rem;
-  padding: 2rem 1.5rem;
+  margin: -1rem calc(0px - (50vw - 50%)) 1rem;
+  padding: 1.5rem;
   padding-left: calc(50vw - 50%);
   padding-right: calc(50vw - 50%);
   background: var(--qs-bg-2);

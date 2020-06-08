@@ -43,14 +43,36 @@ function add_theme_customizer($wp_customize) {
     'priority' => 12
   )));
 
+  // Preview
+  $wp_customize->add_section('preview_section', array(
+    'title' => 'プレビューの設定',
+    'description' => '',
+    'priority' => 28
+  ));
+  $wp_customize->add_setting('preview_body_max_width', array(
+    'default' => 750,
+    'type' => 'option'
+  ));
+  $wp_customize->add_control('preview_body_max_width', array(
+    'label' => '最大幅',
+    'description' => 'サイトの最大幅を変更できます。設定した幅はGutenbergにも適応されます。 ※単位はpx',
+    'section' => 'preview_section',
+    'settings' => 'preview_body_max_width',
+    'type' => 'number',
+    'input_attrs' => array(
+      'min' => 0
+    ),
+    'priority' => 10
+  ));
+
   // Custom Admin
   $wp_customize->add_section('admin_section', array(
     'title' => '管理画面の設定',
     'description' => '',
-    'priority' => 199
+    'priority' => 29
   ));
   $wp_customize->add_setting('hidden_admin_label_comments', array(
-    'default' => null,
+    'default' => true,
     'type' => 'option'
   ));
   $wp_customize->add_control('hidden_admin_label_comments', array(
@@ -59,10 +81,10 @@ function add_theme_customizer($wp_customize) {
     'section' => 'admin_section',
     'settings' => 'hidden_admin_label_comments',
     'type' => 'checkbox',
-    'priority' => 11
+    'priority' => 10
   ));
   $wp_customize->add_setting('admin_label_acf', array(
-    'default' => null,
+    'default' => 'ACF',
     'type' => 'option'
   ));
   $wp_customize->add_control('admin_label_acf', array(
@@ -71,7 +93,7 @@ function add_theme_customizer($wp_customize) {
     'section' => 'admin_section',
     'settings' => 'admin_label_acf',
     'type' => 'text',
-    'priority' => 13
+    'priority' => 11
   ));
 }
 add_action('customize_register', 'add_theme_customizer');
