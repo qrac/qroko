@@ -81,7 +81,7 @@ function add_theme_customizer($wp_customize) {
     'priority' => 29
   ));
   $wp_customize->add_setting('preview_body_max_width', array(
-    'default' => 750,
+    'default' => null,
     'type' => 'option'
   ));
   $wp_customize->add_control('preview_body_max_width', array(
@@ -103,7 +103,7 @@ function add_theme_customizer($wp_customize) {
     'priority' => 30
   ));
   $wp_customize->add_setting('hidden_admin_label_comments', array(
-    'default' => true,
+    'default' => false,
     'type' => 'option'
   ));
   $wp_customize->add_control('hidden_admin_label_comments', array(
@@ -115,7 +115,7 @@ function add_theme_customizer($wp_customize) {
     'priority' => 10
   ));
   $wp_customize->add_setting('admin_label_acf', array(
-    'default' => 'ACF',
+    'default' => null,
     'type' => 'option'
   ));
   $wp_customize->add_control('admin_label_acf', array(
