@@ -119,6 +119,10 @@ p {
   line-height: 1.75;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
 a {
   color: var(--qs-lk-1);
 }

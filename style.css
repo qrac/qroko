@@ -83,7 +83,8 @@ section,
 table,
 textarea,
 ul,
-video {
+video,
+body > [class^="wp-block-"] {
   margin-bottom: 1.25rem;
 }
 
@@ -174,6 +175,10 @@ h6 {
 
 p {
   line-height: 1.75;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 a {
@@ -435,6 +440,7 @@ ul {
 
 li {
   margin-top: 0.4rem;
+  line-height: 1.6875;
 }
 
 ul ul,
