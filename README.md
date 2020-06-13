@@ -48,6 +48,7 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 - Snow Monkey Blocks ([site](https://ja.wordpress.org/plugins/snow-monkey-blocks/))
 - Snow Monkey Editor ([site](https://ja.wordpress.org/plugins/snow-monkey-editor/))
 - UpdraftPlus ([site](https://ja.wordpress.org/plugins/updraftplus/))
+- WP Multibyte Patch ([site](https://ja.wordpress.org/plugins/wp-multibyte-patch/))
 
 ### Unfficial
 
