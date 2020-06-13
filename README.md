@@ -34,20 +34,39 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 1. WP Pusher を[公式サイト](https://wppusher.com/) からダウンロード
 2. WP Pusher をプラグインとしてインストール・有効化
 3. WP Pusher で GitHub 上のテーマ「qrac/qroko」をインストール・有効化
-4. WP Pusher で GitHub 上のプラグイン「wp-graphql/wp-graphql」のブランチ「develop」をインストール・有効化
-5. WP Pusher で GitHub 上のプラグイン「wp-graphql/wp-graphiql」をインストール・有効化
-6. WP Pusher で GitHub 上のプラグイン「pristas-peter/wp-graphql-gutenberg」のブランチ「develop」をインストール・有効化
-7. WordPress 管理画面の「GraphQL Gutenberg」で「Update block registry」を Update
-8. WordPress 管理画面の「Graphiql」で blocks のデータが取得できるか確認
 
-### Plugins
+## Recommended Plugins
 
-- [WP Pusher](https://wppusher.com/)
-- [WPGraphQL](https://www.wpgraphql.com/)
-  - [GitHub | wp-graphql/wp-graphql](https://github.com/wp-graphql/wp-graphql)
-  - [GitHub | wp-graphql/wp-graphiql](https://github.com/wp-graphql/wp-graphiql)
-- [WpGraphQL Gutenberg](https://wp-graphql-gutenberg.netlify.app/)
-  - [GitHub | pristas-peter/wp-graphql-gutenberg](https://github.com/pristas-peter/wp-graphql-gutenberg)
+### Official
+
+- Admin Color Schemes ([site](https://ja.wordpress.org/plugins/admin-color-schemes/))
+- Advanced Custom Fields ([site](https://ja.wordpress.org/plugins/advanced-custom-fields/))
+- Custom Post Type UI ([site](https://ja.wordpress.org/plugins/custom-post-type-ui/))
+- FileBird Lite ([site](https://ja.wordpress.org/plugins/filebird/))
+- Intuitive Custom Post Order ([site](https://ja.wordpress.org/plugins/intuitive-custom-post-order/))
+- JAMstack Deployments ([site](https://ja.wordpress.org/plugins/wp-jamstack-deployments/)/[repo](https://github.com/crgeary/wp-jamstack-deployments))
+- Snow Monkey Blocks ([site](https://ja.wordpress.org/plugins/snow-monkey-blocks/))
+- Snow Monkey Editor ([site](https://ja.wordpress.org/plugins/snow-monkey-editor/))
+- UpdraftPlus ([site](https://ja.wordpress.org/plugins/updraftplus/))
+
+### Unfficial
+
+- Advanced Custom Fields PRO ([site](https://www.advancedcustomfields.com/pro/))
+- WP Pusher ([site](https://wppusher.com/))
+
+### GitHub Sync
+
+- WPGraphQL ([site](https://www.wpgraphql.com/))
+  - wp-graphql/wp-graphql - develop ([repo](https://github.com/wp-graphql/wp-graphql))
+  - wp-graphql/wp-graphiql - master ([repo](https://github.com/wp-graphql/wp-graphiql))
+  - wp-graphql/wp-graphql-custom-post-type-ui - master ([repo](https://github.com/wp-graphql/wp-graphql-custom-post-type-ui))
+  - wp-graphql/wp-graphql-acf - develop ([repo](https://github.com/wp-graphql/wp-graphql-acf))
+- WPGraphQL Gutenberg ([site](https://wp-graphql-gutenberg.netlify.app/))
+  - pristas-peter/wp-graphql-gutenberg - develop ([repo](https://github.com/pristas-peter/wp-graphql-gutenberg))
+
+### Customize
+
+- Qroko My Functions ([repo](https://github.com/qrac/qroko-my-functions)/[download](https://github.com/qrac/qroko-my-functions/archive/master.zip))
 
 ## License
 
