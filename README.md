@@ -42,6 +42,7 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 - Admin Color Schemes ([site](https://ja.wordpress.org/plugins/admin-color-schemes/))
 - Advanced Custom Fields ([site](https://ja.wordpress.org/plugins/advanced-custom-fields/))
 - Custom Post Type UI ([site](https://ja.wordpress.org/plugins/custom-post-type-ui/))
+- Enable Media Replace ([site](https://ja.wordpress.org/plugins/enable-media-replace/))
 - FileBird Lite ([site](https://ja.wordpress.org/plugins/filebird/))
 - Intuitive Custom Post Order ([site](https://ja.wordpress.org/plugins/intuitive-custom-post-order/))
 - JAMstack Deployments ([site](https://ja.wordpress.org/plugins/wp-jamstack-deployments/)/[repo](https://github.com/crgeary/wp-jamstack-deployments))
@@ -53,6 +54,7 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 ### Unfficial
 
 - Advanced Custom Fields PRO ([site](https://www.advancedcustomfields.com/pro/))
+- UpdraftPlus Premium ([site](https://updraftplus.com/shop/))
 - WP Pusher ([site](https://wppusher.com/))
 
 ### GitHub Sync
