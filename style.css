@@ -6,7 +6,7 @@ Author: Qrac
 Author URI: https://qrac.jp
 Organization: QRANOKO
 Organization URI: https://qranoko.jp
-Version: 0.9.0
+Version: 0.9.1
 License: GPL-2.0-or-later
 License URI: LICENSE
 Text Domain: qroko
@@ -496,12 +496,21 @@ time {
   opacity: 0.5;
 }
 
+iframe {
+  max-width: 100%;
+}
+
 .pagination,
 .pager {
   padding-top: 1rem;
   border-top: 1px solid var(--qs-bg-3);
 }
 
-.smb-btn--full {
+.smb-btn--full,
+.smb-balloon__body {
   box-sizing: border-box;
+}
+
+.smb-panels__item__figure > img {
+  height: auto;
 }
