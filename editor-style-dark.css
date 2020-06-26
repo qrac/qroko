@@ -1,0 +1,14 @@
+@media (prefers-color-scheme: dark) {
+  :root .editor-styles-wrapper {
+    --qs-tx-1: #ffffff;
+    --qs-tx-2: #eeeeee;
+    --qs-bg-1: #000000;
+    --qs-bg-2: #111111;
+    --qs-bg-3: #222222;
+    --qs-lk-1: #3291ff;
+    --qs-lk-2: #0070f3;
+    --qs-lk-tx: #ffffff;
+    --qs-ac-1: #7928ca;
+    --qs-ac-tx: #ffffff;
+  }
+}

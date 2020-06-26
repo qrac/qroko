@@ -33,21 +33,6 @@ Base: new.css v1.1.3 - MIT (https://github.com/xz/new.css)
   --qs-ac-tx: #0c4047;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --qs-tx-1: #ffffff;
-    --qs-tx-2: #eeeeee;
-    --qs-bg-1: #000000;
-    --qs-bg-2: #111111;
-    --qs-bg-3: #222222;
-    --qs-lk-1: #3291ff;
-    --qs-lk-2: #0070f3;
-    --qs-lk-tx: #ffffff;
-    --qs-ac-1: #7928ca;
-    --qs-ac-tx: #ffffff;
-  }
-}
-
 html,
 input,
 select,

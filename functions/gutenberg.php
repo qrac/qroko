@@ -25,3 +25,13 @@ function admin_head_custom_body_max_width() {
   }
 }
 add_action('admin_head', 'admin_head_custom_body_max_width');
+
+// Admin Dark Mode CSS
+function admin_dark_mode_css( $wp_admin_bar ) {
+  $dark_mode_css = get_option('active_admin_dark_mode_css');
+
+  if ($dark_mode_css) {
+    wp_enqueue_style( 'editor-style-dark', get_template_directory_uri() . '/editor-style-dark.css' );
+  }
+}
+add_action( 'enqueue_block_editor_assets', 'admin_dark_mode_css' );
