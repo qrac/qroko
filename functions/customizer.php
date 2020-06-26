@@ -120,12 +120,26 @@ function add_theme_customizer($wp_customize) {
   ));
   $wp_customize->add_control('admin_label_acf', array(
     'label' => 'Advanced Custom Fields',
-    'description' => '管理画面のメニュー「カスタムフィールド」を上書きできます。',
+    'description' => '管理画面のメニュー「カスタムフィールド」を上書きできます。（例：ACF）',
     'section' => 'admin_section',
     'settings' => 'admin_label_acf',
     'type' => 'text',
     'priority' => 11
   ));
+  $wp_customize->add_setting('admin_button_bgcolor_jamdep');
+  $wp_customize->add_control(
+    new WP_Customize_Color_Control(
+      $wp_customize,
+      'admin_button_bgcolor_jamdep',
+      array(
+        'label'    => 'Jamstack Deployments',
+        'description' => '管理画面のボタン「Deploy Website」の背景色を変更できます。（例：#3fa7bc）',
+        'section'  => 'admin_section',
+        'settings' => 'admin_button_bgcolor_jamdep',
+        'priority' => 12
+      )
+    )
+  );
 }
 add_action('customize_register', 'add_theme_customizer');
 

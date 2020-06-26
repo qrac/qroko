@@ -74,3 +74,17 @@ function admin_custom_menu_label() {
   }
 }
 add_action( 'admin_menu', 'admin_custom_menu_label' );
+
+// Admin Custom Button Jamstack Deployments
+function admin_custom_button_jamdep() {
+  $bgcolor = get_theme_mod('admin_button_bgcolor_jamdep');
+
+  if ($bgcolor) {
+    echo '<style>' .
+      '#wpcontent #wpadminbar .wp-jamstack-deployments-button > a { background-color: ' .
+      $bgcolor .
+      ' !important; }' .
+      '</style>';
+  }
+}
+add_action('admin_head', 'admin_custom_button_jamdep');
