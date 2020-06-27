@@ -55,6 +55,7 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 
 - Advanced Custom Fields PRO ([site](https://www.advancedcustomfields.com/pro/))
 - UpdraftPlus Premium ([site](https://updraftplus.com/shop/))
+- yStandard Blocks ([site](https://wp-ystandard.com/plugins/ystandard-blocks/))
 - WP Pusher ([site](https://wppusher.com/))
 
 ### GitHub Sync
