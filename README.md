@@ -26,7 +26,7 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 ## Basic Setting
 
 1. Zip ファイルを[ダウンロード](https://github.com/qrac/qroko/archive/master.zip)
-2. Zip ファイルを WordPress テーマとしてインストール＞
+2. Zip ファイルを WordPress テーマとしてインストール
 3. テーマ「Qroko」を有効化
 
 ## Advanced Setting
