@@ -18,7 +18,7 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 - GraphQL（WPGraphQL プラグインが必要）
 - REST API（遅いし負荷も大きいので GraphQL 推奨）
 - 最低限のファイル構成
-- 最低限の投稿プレビュー（[new.css](https://newcss.net/) を日本語用にアレンジ）
+- 最低限の投稿プレビュー
 - 投稿プレビューの幅を変更する機能
 - 日本語パーマリンクの生成を防ぐ機能
 - ログインユーザー以外をリダイレクトする機能
@@ -75,7 +75,6 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 ## License
 
 - Theme: Qroko - GNU General Public License v2.0 or late
-- Base CSS: [new.css](https://github.com/xz/new.css) - MIT
 - Image Fonts: [JetBrains Mono](https://www.jetbrains.com/lp/mono/) - Apache 2.0 license
 
 ## Credit

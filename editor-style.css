@@ -10,50 +10,18 @@ License: GPL-2.0-or-later
 License URI: LICENSE
 */
 
-/*
-Project: Qroko Editor Style
-Base: new.css v1.1.3 - MIT (https://github.com/xz/new.css)
-*/
-:root {
-  --qs-font-sans: "Hiragino Sans", "Hiragino Kaku Gothic ProN",
-    "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --qs-font-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-    Meiryo, monospace, serif;
-  --qs-site-width: 620px;
-  --qs-tx-1: #1a1a1a;
-  --qs-tx-2: #202020;
-  --qs-bg-1: #ffffff;
-  --qs-bg-2: #f6f8fa;
-  --qs-bg-3: #d1d8dc;
-  --qs-lk-1: #0070f3;
-  --qs-lk-2: #0366d6;
-  --qs-lk-tx: #ffffff;
-  --qs-ac-1: #79ffe1;
-  --qs-ac-tx: #0c4047;
-}
-
 html,
 input,
 select,
 button {
-  font-family: var(--qs-font-sans);
+  font-family: var(--font-sans);
 }
 
 body {
-  background: var(--qs-bg-1);
-  color: var(--qs-tx-2);
+  background: var(--bg-1);
+  color: var(--tx-2);
   font-size: 1rem;
   line-height: 1.5;
-}
-
-.wp-block {
-  max-width: var(--qs-site-width);
-}
-
-::selection {
-  background: var(--qs-ac-1);
-  color: var(--qs-ac-tx);
 }
 
 h1,
@@ -62,17 +30,11 @@ h3,
 h4,
 h5,
 h6 {
-  padding-top: 1rem;
-  color: var(--qs-tx-1);
+  color: var(--tx-1);
   font-weight: 600;
   font-feature-settings: "palt";
   letter-spacing: 0.0125em;
   line-height: 1.25;
-}
-
-h2 {
-  padding-bottom: 0.25rem;
-  border-bottom: 1px solid var(--qs-bg-3);
 }
 
 h1 {
@@ -104,23 +66,15 @@ p {
   line-height: 1.75;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
 a {
-  color: var(--qs-lk-1);
-}
-
-a:hover {
-  color: var(--qs-lk-2);
+  color: var(--lk-1);
 }
 
 code,
 pre,
 kbd,
 samp {
-  font-family: var(--qs-font-mono);
+  font-family: var(--font-mono);
 }
 
 ul,
@@ -129,16 +83,20 @@ ol {
   padding-left: 0;
 }
 
+.wp-block {
+  max-width: var(--site-width);
+}
+
 .block-editor-default-block-appender
   textarea.block-editor-default-block-appender__content {
-  font-family: var(--qs-font-sans);
+  font-family: var(--font-sans);
 }
 
 .editor-post-title__block .editor-post-title__input {
-  color: var(--qs-tx-1);
+  color: var(--tx-1);
   font-size: 2rem;
   font-weight: 600;
-  font-family: var(--qs-font-sans);
+  font-family: var(--font-sans);
   font-feature-settings: "palt";
   letter-spacing: 0.0125em;
   line-height: 1.25;
@@ -147,19 +105,19 @@ ol {
 
 .wp-block-quote {
   padding: 1.5rem;
-  background: var(--qs-bg-2);
-  border-left: 5px solid var(--qs-bg-3);
+  background: var(--bg-2);
+  border-left: 5px solid var(--bg-3);
 }
 
 .wp-block-quote .wp-block-quote__citation {
-  color: var(--qs-tx-2);
+  color: var(--tx-2);
   font-size: 0.875rem;
   opacity: 0.65;
 }
 
 .block-editor-rich-text__editable code {
-  background: var(--qs-bg-2);
-  border: 1px solid var(--qs-bg-3);
+  background: var(--bg-2);
+  border: 1px solid var(--bg-3);
   border-radius: 4px;
   padding: 3px 6px;
   font-size: 0.9rem;
@@ -167,11 +125,11 @@ ol {
 
 .wp-block-code,
 .wp-block-code textarea {
-  background: var(--qs-bg-2);
+  background: var(--bg-2);
 }
 
 .wp-block-code textarea {
-  color: var(--qs-tx-2);
+  color: var(--tx-2);
   font-size: 0.9rem;
 }
 
@@ -180,31 +138,30 @@ ol {
 }
 
 .wp-block-table table th {
-  background: var(--qs-bg-2);
+  background: var(--bg-2);
 }
 
 .wp-block-table table td,
 .wp-block-table table th {
   padding: 0.5rem;
-  border: 1px solid var(--qs-bg-3);
+  border: 1px solid var(--bg-3);
 }
 
 .wp-block-table table tfoot {
-  border-top: 2px solid var(--qs-bg-3);
+  border-top: 2px solid var(--bg-3);
 }
 
 .wp-block-table figcaption {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
-  color: var(--qs-tx-2);
+  color: var(--tx-2);
   font-size: 0.875rem;
   opacity: 0.65;
 }
 
 .wp-block-image figcaption {
   margin-top: 0.5rem;
-  margin-bottom: 1rem;
-  color: var(--qs-tx-2);
+  color: var(--tx-2);
   font-size: 0.875rem;
   opacity: 0.65;
 }

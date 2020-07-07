@@ -6,49 +6,11 @@ Author: Qrac
 Author URI: https://qrac.jp
 Organization: QRANOKO
 Organization URI: https://qranoko.jp
-Version: 0.9.2
+Version: 1.0.0
 License: GPL-2.0-or-later
 License URI: LICENSE
 Text Domain: qroko
 */
-
-/*
-Project: Qroko Style
-Base: new.css v1.1.3 - MIT (https://github.com/xz/new.css)
-*/
-:root {
-  --qs-font-sans: "Hiragino Sans", "Hiragino Kaku Gothic ProN",
-    "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --qs-font-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-    Meiryo, monospace, serif;
-  --qs-site-width: 620px;
-  --qs-tx-1: #1a1a1a;
-  --qs-tx-2: #202020;
-  --qs-bg-1: #ffffff;
-  --qs-bg-2: #f6f8fa;
-  --qs-bg-3: #d1d8dc;
-  --qs-lk-1: #0070f3;
-  --qs-lk-2: #0366d6;
-  --qs-lk-tx: #ffffff;
-  --qs-ac-1: #79ffe1;
-  --qs-ac-tx: #0c4047;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --qs-tx-1: #ffffff;
-    --qs-tx-2: #eeeeee;
-    --qs-bg-1: #000000;
-    --qs-bg-2: #111111;
-    --qs-bg-3: #222222;
-    --qs-lk-1: #3291ff;
-    --qs-lk-2: #0070f3;
-    --qs-lk-tx: #ffffff;
-    --qs-ac-1: #7928ca;
-    --qs-ac-tx: #ffffff;
-  }
-}
 
 * {
   margin: 0;
@@ -94,7 +56,7 @@ html,
 input,
 select,
 button {
-  font-family: var(--qs-font-sans);
+  font-family: var(--font-sans);
 }
 
 html {
@@ -104,19 +66,14 @@ html {
 }
 
 body {
-  max-width: var(--qs-site-width);
+  max-width: var(--site-width);
   margin: 0 auto;
   padding: 1rem 1rem 40vh;
-  background: var(--qs-bg-1);
+  background: var(--bg-1);
   word-break: break-word;
-  color: var(--qs-tx-2);
+  color: var(--tx-2);
   font-size: 1rem;
   line-height: 1.5;
-}
-
-::selection {
-  background: var(--qs-ac-1);
-  color: var(--qs-ac-tx);
 }
 
 h1,
@@ -127,7 +84,7 @@ h5,
 h6 {
   padding-top: 1rem;
   padding-bottom: 0.25rem;
-  color: var(--qs-tx-1);
+  color: var(--tx-1);
   font-weight: 600;
   font-feature-settings: "palt";
   letter-spacing: 0.0125em;
@@ -137,7 +94,7 @@ h6 {
 h1,
 h2,
 h3 {
-  color: var(--qs-tx-1);
+  color: var(--tx-1);
   margin-bottom: 1rem;
 }
 
@@ -148,7 +105,7 @@ h6 {
 }
 
 h2 {
-  border-bottom: 1px solid var(--qs-bg-3);
+  border-bottom: 1px solid var(--bg-3);
 }
 
 h1 {
@@ -184,24 +141,20 @@ p:last-child {
 }
 
 a {
-  color: var(--qs-lk-1);
-}
-
-a:hover {
-  color: var(--qs-lk-2);
+  color: var(--lk-1);
 }
 
 blockquote,
 blockquote.wp-block-quote {
   margin-bottom: 1.25rem;
   padding: 1.5rem;
-  background: var(--qs-bg-2);
-  border-left: 5px solid var(--qs-bg-3);
+  background: var(--bg-2);
+  border-left: 5px solid var(--bg-3);
 }
 
 blockquote cite,
 blockquote.wp-block-quote cite {
-  color: var(--qs-tx-2);
+  color: var(--tx-2);
   font-size: 0.875rem;
   opacity: 0.65;
 }
@@ -216,8 +169,8 @@ header {
   padding: 1.5rem;
   padding-left: calc(50vw - 50%);
   padding-right: calc(50vw - 50%);
-  background: var(--qs-bg-2);
-  border-bottom: 1px solid var(--qs-bg-3);
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--bg-3);
 }
 
 header h1,
@@ -243,12 +196,12 @@ input[type="button"] {
   cursor: pointer;
   display: inline-block;
   padding: 6px 12px;
-  background: var(--qs-lk-1);
+  background: var(--lk-1);
   border: 0;
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 1rem;
-  color: var(--qs-lk-tx);
+  color: var(--lk-tx);
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
@@ -274,14 +227,14 @@ input[type="reset"]:focus,
 input[type="reset"]:hover,
 input[type="button"]:focus,
 input[type="button"]:hover {
-  background: var(--qs-lk-2);
+  background: var(--lk-2);
 }
 
 code,
 pre,
 kbd,
 samp {
-  font-family: var(--qs-font-mono);
+  font-family: var(--font-mono);
 }
 
 code,
@@ -289,14 +242,14 @@ samp,
 kbd,
 pre {
   padding: 3px 6px;
-  background: var(--qs-bg-2);
-  border: 1px solid var(--qs-bg-3);
+  background: var(--bg-2);
+  border: 1px solid var(--bg-3);
   border-radius: 4px;
   font-size: 0.9rem;
 }
 
 kbd {
-  border-bottom: 3px solid var(--qs-bg-3);
+  border-bottom: 3px solid var(--bg-3);
 }
 
 pre {
@@ -307,7 +260,7 @@ pre {
 
 pre,
 pre.wp-block-code {
-  color: var(--qs-tx-2);
+  color: var(--tx-2);
 }
 
 pre code {
@@ -331,8 +284,8 @@ code pre {
 
 details {
   padding: 0.6rem 1rem;
-  background: var(--qs-bg-2);
-  border: 1px solid var(--qs-bg-3);
+  background: var(--bg-2);
+  border: 1px solid var(--bg-3);
   border-radius: 4px;
 }
 
@@ -364,13 +317,13 @@ dd::before {
 hr {
   margin: 1rem auto;
   border: 0;
-  border-bottom: 1px solid var(--qs-bg-3);
+  border-bottom: 1px solid var(--bg-3);
 }
 
 fieldset {
   margin-top: 1rem;
   padding: 2rem;
-  border: 1px solid var(--qs-bg-3);
+  border: 1px solid var(--bg-3);
   border-radius: 4px;
 }
 
@@ -399,12 +352,12 @@ table th,
 .wp-block-table table td,
 .wp-block-table table th {
   padding: 0.5rem;
-  border: 1px solid var(--qs-bg-3);
+  border: 1px solid var(--bg-3);
 }
 
 table th,
 .wp-block-table table th {
-  background: var(--qs-bg-2);
+  background: var(--bg-2);
 }
 
 table caption,
@@ -415,7 +368,7 @@ table caption,
 
 table tfoot,
 .wp-block-table table tfoot {
-  border-top: 2px solid var(--qs-bg-3);
+  border-top: 2px solid var(--bg-3);
 }
 
 figure table {
@@ -426,7 +379,7 @@ figure figcaption,
 figure.wp-block-table figcaption {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
-  color: var(--qs-tx-2);
+  color: var(--tx-2);
   font-size: 0.875rem;
   opacity: 0.65;
 }
@@ -458,8 +411,8 @@ li p {
 
 mark {
   padding: 3px 6px;
-  background: var(--qs-ac-1);
-  color: var(--qs-ac-tx);
+  background: var(--ac-1);
+  color: var(--ac-tx);
 }
 
 textarea,
@@ -467,12 +420,12 @@ select,
 input {
   margin-bottom: 0.5rem;
   padding: 6px 12px;
-  background: var(--qs-bg-2);
-  border: 1px solid var(--qs-bg-3);
+  background: var(--bg-2);
+  border: 1px solid var(--bg-3);
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
-  color: var(--qs-tx-2);
+  color: var(--tx-2);
 }
 
 img {
@@ -487,7 +440,7 @@ figure figcaption,
 figure.wp-block-image figcaption {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
-  color: var(--qs-tx-2);
+  color: var(--tx-2);
   font-size: 0.875rem;
   opacity: 0.65;
 }
@@ -504,7 +457,7 @@ iframe {
 .pagination,
 .pager {
   padding-top: 1rem;
-  border-top: 1px solid var(--qs-bg-3);
+  border-top: 1px solid var(--bg-3);
 }
 
 .smb-btn--full,
