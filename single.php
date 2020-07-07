@@ -10,14 +10,24 @@
   <?php get_template_part('components/app-header'); ?>
   <?php get_template_part('components/app-menu'); ?>
   <main class="app-main">
-    <?php get_template_part('components/app-title'); ?>
-    <?php if (have_posts()): ?>
-      <?php while (have_posts()): the_post(); ?>
-        <p><time><?php the_time('Y年n月j日'); ?></time></p>
-        <?php the_content(); ?>
-      <?php endwhile; ?>
-      <?php wp_link_pages(); ?>
-    <?php endif; ?>
+    <div class="app-main-contents">
+      <?php if (have_posts()): ?>
+        <article class="article">
+          <?php while (have_posts()): the_post(); ?>
+            <header class="article-header">
+              <?php get_template_part('components/app-title'); ?>
+              <p class="article-date">
+                <time><?php the_time('Y年n月j日'); ?></time>
+              </p>
+            </header>
+            <div class="article-contents">
+              <?php the_content(); ?>
+            </div>
+          <?php endwhile; ?>
+          <?php wp_link_pages(); ?>
+        </article>
+      <?php endif; ?>
+    </div>
   </main>
   <?php get_template_part('components/app-footer'); ?>
 </body>

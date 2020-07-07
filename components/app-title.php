@@ -3,7 +3,7 @@
 // App Title
 //----------------------------------------------------
 ?>
-<h1>
+<h1 class="app-title">
   <?php if (is_home() || is_front_page()): ?>
     Home
   <?php elseif (is_search()): ?>
