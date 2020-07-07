@@ -129,6 +129,11 @@ ol {
   padding-left: 0;
 }
 
+.block-editor-default-block-appender
+  textarea.block-editor-default-block-appender__content {
+  font-family: var(--qs-font-sans);
+}
+
 .editor-post-title__block .editor-post-title__input {
   color: var(--qs-tx-1);
   font-size: 2rem;
