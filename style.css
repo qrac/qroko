@@ -12,68 +12,165 @@ License URI: LICENSE
 Text Domain: qroko
 */
 
-* {
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
-}
-
-address,
-area,
-article,
-aside,
-audio,
-blockquote,
-datalist,
-details,
-dl,
-fieldset,
-figure,
-form,
-input,
-iframe,
-img,
-meter,
-nav,
-ol,
-optgroup,
-option,
-output,
-p,
-pre,
-progress,
-ruby,
-section,
-table,
-textarea,
-ul,
-video,
-body > [class^="wp-block-"],
-body > [class^="ystdb-"] {
-  margin-bottom: 1.25rem;
-}
-
-html,
-input,
-select,
-button {
-  font-family: var(--font-sans);
+  box-sizing: border-box;
+  font-family: inherit;
 }
 
 html {
+  font-family: var(--font-sans);
+  word-break: break-word;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  max-width: var(--site-width);
-  margin: 0 auto;
-  padding: 1rem 1rem 40vh;
   background: var(--bg-1);
-  word-break: break-word;
   color: var(--tx-2);
   font-size: 1rem;
   line-height: 1.5;
+  word-break: break-word;
+}
+
+a {
+  color: var(--lk-1);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img,
+iframe {
+  max-width: 100%;
+}
+
+.app-header {
+  position: relative;
+  padding: 16px 0;
+  background-color: var(--bg-1);
+  z-index: 80;
+}
+
+.app-header > .app-header-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: calc(var(--site-width) + 16px * 2);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.app-header-contents > .app-header-description {
+  flex: 1 0 0;
+  margin-left: 20px;
+}
+
+.app-header-site-name {
+  flex: none;
+  display: flex;
+  color: var(--tx-1);
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.app-header-description {
+  color: var(--tx-3);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.app-header + .app-menu {
+  margin-top: -16px;
+}
+
+.app-menu {
+  position: relative;
+  background-color: var(--bg-1);
+  z-index: 100;
+}
+
+@media (min-width: 992px) {
+  .app-menu {
+    position: sticky;
+    top: 0;
+  }
+}
+
+.app-menu:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--bg-2);
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.app-menu-nav {
+  position: relative;
+  max-width: calc(var(--site-width) + 16px * 2);
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.app-menu-nav > ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.app-menu-nav > ul > li {
+  padding: 4px;
+  list-style: none;
+}
+
+.app-menu-nav > ul > li > a {
+  position: relative;
+  display: flex;
+  padding: 12px;
+  color: var(--tx-3);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.12s;
+}
+
+.app-menu-nav > ul > li > a:hover {
+  color: var(--tx-2);
+}
+
+.app-menu-nav > ul > li > a:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--bg-2);
+  transform: translateX(-50%);
+  transition: width 0.12s, background-color 0.12s;
+  z-index: 2;
+}
+
+.app-menu-nav > ul > li > a:hover:after,
+.app-menu-nav > ul > li.current-menu-item > a:after {
+  width: calc(100% - 12px * 2);
+  background-color: var(--ac-1);
 }
 
 h1,
@@ -82,30 +179,11 @@ h3,
 h4,
 h5,
 h6 {
-  padding-top: 1rem;
-  padding-bottom: 0.25rem;
   color: var(--tx-1);
   font-weight: 600;
   font-feature-settings: "palt";
   letter-spacing: 0.0125em;
   line-height: 1.25;
-}
-
-h1,
-h2,
-h3 {
-  color: var(--tx-1);
-  margin-bottom: 1rem;
-}
-
-h4,
-h5,
-h6 {
-  margin-bottom: 0.75rem;
-}
-
-h2 {
-  border-bottom: 1px solid var(--bg-3);
 }
 
 h1 {
@@ -136,10 +214,6 @@ p {
   line-height: 1.75;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
 a {
   color: var(--lk-1);
 }
@@ -162,30 +236,6 @@ blockquote.wp-block-quote cite {
 blockquote *:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
-}
-
-header {
-  margin: -1rem calc(0px - (50vw - 50%)) 1rem;
-  padding: 1.5rem;
-  padding-left: calc(50vw - 50%);
-  padding-right: calc(50vw - 50%);
-  background: var(--bg-2);
-  border-bottom: 1px solid var(--bg-3);
-}
-
-header h1,
-header h2,
-header h3 {
-  padding-bottom: 0;
-}
-
-header > *:first-child {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-header > *:last-child {
-  margin-bottom: 0;
 }
 
 a button,
