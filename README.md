@@ -37,6 +37,10 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 
 ## Recommended Plugins
 
+### Official and Optimal
+
+- Qroko Blocks ([site](https://wordpress.org/plugins/qroko-blocks/)/[repo](https://github.com/qrac/qroko-blocks))
+
 ### Official
 
 - Admin Color Schemes ([site](https://ja.wordpress.org/plugins/admin-color-schemes/))
@@ -51,7 +55,7 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 - UpdraftPlus ([site](https://ja.wordpress.org/plugins/updraftplus/))
 - WP Multibyte Patch ([site](https://ja.wordpress.org/plugins/wp-multibyte-patch/))
 
-### Unfficial
+### Unofficial
 
 - Advanced Custom Fields PRO ([site](https://www.advancedcustomfields.com/pro/))
 - UpdraftPlus Premium ([site](https://updraftplus.com/shop/))
