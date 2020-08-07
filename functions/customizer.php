@@ -95,6 +95,18 @@ function add_theme_customizer($wp_customize) {
     ),
     'priority' => 10
   ));
+  $wp_customize->add_setting('preview_add_thumbnail', array(
+    'default' => false,
+    'type' => 'option'
+  ));
+  $wp_customize->add_control('preview_add_thumbnail', array(
+    'label' => 'アイキャッチをページ上部に表示',
+    'description' => '',
+    'section' => 'preview_section',
+    'settings' => 'preview_add_thumbnail',
+    'type' => 'checkbox',
+    'priority' => 11
+  ));
 
   // Custom Admin
   $wp_customize->add_section('admin_section', array(
