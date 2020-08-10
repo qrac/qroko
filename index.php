@@ -5,29 +5,21 @@
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<?php get_template_part('components/app-head'); ?>
+<?php get_template_part('src/components/app-head'); ?>
 <body <?php body_class(); ?>>
-  <?php get_template_part('components/app-header'); ?>
-  <?php get_template_part('components/app-menu'); ?>
+  <?php get_template_part('src/components/app-header'); ?>
+  <?php get_template_part('src/components/app-nav'); ?>
   <main class="app-main">
-    <div class="app-main-contents">
-      <?php get_template_part('components/app-title'); ?>
-      <?php if (have_posts()): ?>
-        <ul>
-          <?php while (have_posts()): the_post(); ?>
-            <li>
-              <a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?>
-              </a>
-            </li>
-          <?php endwhile; ?>
-        </ul>
-      <?php endif; ?>
-      <?php if (function_exists("pagination")): ?>
-        <?php pagination($additional_loop->max_num_pages);?>
-      <?php endif; ?>
-    </div>
+    <?php if( is_404() ): ?>
+      <?php get_template_part('src/pages/404'); ?>
+    <?php elseif( is_page() ): ?>
+      <?php get_template_part('src/pages/page'); ?>
+    <?php elseif( is_singular() ): ?>
+      <?php get_template_part('src/pages/single'); ?>
+    <?php else: ?>
+      <?php get_template_part('src/pages/index'); ?>
+    <?php endif; ?>
   </main>
-  <?php get_template_part('components/app-footer'); ?>
+  <?php get_template_part('src/components/app-footer'); ?>
 </body>
 </html>

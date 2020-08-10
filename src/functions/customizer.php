@@ -126,7 +126,7 @@ function add_theme_customizer($wp_customize) {
     'type' => 'checkbox',
     'priority' => 10
   ));
-  $wp_customize->add_setting('active_admin_dark_mode_css', array(
+  /*$wp_customize->add_setting('active_admin_dark_mode_css', array(
     'default' => false,
     'type' => 'option'
   ));
@@ -137,7 +137,7 @@ function add_theme_customizer($wp_customize) {
     'settings' => 'active_admin_dark_mode_css',
     'type' => 'checkbox',
     'priority' => 10
-  ));
+  ));*/
   $wp_customize->add_setting('admin_label_acf', array(
     'default' => null,
     'type' => 'option'

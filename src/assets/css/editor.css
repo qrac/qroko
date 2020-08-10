@@ -1,0 +1,242 @@
+/*----------------------------------------------------
+// HTML
+----------------------------------------------------*/
+
+html,
+input,
+select,
+button {
+  font-family: var(
+    --qroko-font-sans,
+    "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN",
+    "Noto Sans Japanese",
+    Meiryo,
+    "Yu Gothic Medium",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol"
+  );
+}
+
+body {
+  background: var(--qroko-bg-1, #ffffff);
+  color: var(--qroko-tx-2, #202020);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--qroko-tx-1, #1a1a1a);
+  font-weight: 600;
+  font-feature-settings: "palt";
+  letter-spacing: 0.0125em;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.875rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+a {
+  color: var(--qroko-lk-1, #0070f3);
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: var(
+    --qroko-font-mono,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Liberation Mono",
+    "Courier New",
+    Meiryo,
+    monospace,
+    serif
+  );
+}
+
+ul,
+ol {
+  margin-left: 2rem;
+  padding-left: 0;
+}
+
+/*----------------------------------------------------
+// Blocks: Core
+----------------------------------------------------*/
+
+.wp-block {
+  max-width: var(--qroko-site-width, 620px);
+}
+
+.block-editor-default-block-appender
+  textarea.block-editor-default-block-appender__content {
+  font-family: var(
+    --qroko-font-sans,
+    "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN",
+    "Noto Sans Japanese",
+    Meiryo,
+    "Yu Gothic Medium",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol"
+  );
+}
+
+.editor-post-title__block .editor-post-title__input {
+  color: var(--qroko-tx-1, #1a1a1a);
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(
+    --qroko-font-sans,
+    "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN",
+    "Noto Sans Japanese",
+    Meiryo,
+    "Yu Gothic Medium",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol"
+  );
+  font-feature-settings: "palt";
+  letter-spacing: 0.0125em;
+  line-height: 1.25;
+  word-break: break-word;
+}
+
+.components-toolbar .components-button {
+  white-space: nowrap;
+}
+
+/*----------------------------------------------------
+// Blocks: Core Quote
+----------------------------------------------------*/
+
+.wp-block-quote {
+  padding: 1.5rem;
+  background: var(--qroko-bg-2, #f6f8fa);
+  border-left: 5px solid var(--qroko-bg-3, #d1d8dc);
+}
+
+.wp-block-quote .wp-block-quote__citation {
+  color: var(--qroko-tx-2, #202020);
+  font-size: 0.875rem;
+  opacity: 0.65;
+}
+
+/*----------------------------------------------------
+// Blocks: Core Image
+----------------------------------------------------*/
+
+.wp-block-image figcaption {
+  margin-top: 0.5rem;
+  color: var(--qroko-tx-2, #202020);
+  font-size: 0.875rem;
+  opacity: 0.65;
+}
+
+/*----------------------------------------------------
+// Blocks: Core Code
+----------------------------------------------------*/
+
+.block-editor-rich-text__editable code {
+  background: var(--qroko-bg-2, #f6f8fa);
+  border: 1px solid var(--qroko-bg-3, #d1d8dc);
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-size: 0.9rem;
+}
+
+.wp-block-code,
+.wp-block-code textarea {
+  background: var(--qroko-bg-2, #f6f8fa);
+}
+
+.wp-block-code textarea {
+  color: var(--qroko-tx-2, #202020);
+  font-size: 0.9rem;
+}
+
+/*----------------------------------------------------
+// Blocks: Core Table
+----------------------------------------------------*/
+
+.wp-block-table table thead {
+  border-bottom: none;
+}
+
+.wp-block-table table th {
+  background: var(--qroko-bg-2, #f6f8fa);
+}
+
+.wp-block-table table td,
+.wp-block-table table th {
+  padding: 0.5rem;
+  border: 1px solid var(--qroko-bg-3, #d1d8dc);
+}
+
+.wp-block-table table tfoot {
+  border-top: 2px solid var(--qroko-bg-3, #d1d8dc);
+}
+
+.wp-block-table figcaption {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--qroko-tx-2, #202020);
+  font-size: 0.875rem;
+  opacity: 0.65;
+}
+
+/*----------------------------------------------------
+// Blocks: Snow Monkey Blocks
+----------------------------------------------------*/
+
+.smb-testimonial .components-button {
+  height: 48px;
+}
+
+.smb-balloon .components-button {
+  height: 54px;
+}
+
+.smb-panels__item__link {
+  word-break: break-all;
+}

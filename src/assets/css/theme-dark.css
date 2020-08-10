@@ -1,0 +1,15 @@
+/*----------------------------------------------------
+// Theme Dark
+----------------------------------------------------*/
+
+body.theme-dark {
+  --qroko-tx-1: #ffffff;
+  --qroko-tx-2: #eeeeee;
+  --qroko-tx-3: #9e9e9e;
+  --qroko-bg-1: #000000;
+  --qroko-bg-2: #111111;
+  --qroko-bg-3: #222222;
+  --qroko-lk-1: #3291ff;
+  --qroko-lk-tx: #ffffff;
+  --qroko-ac-1: #7928ca;
+}

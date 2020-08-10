@@ -1,0 +1,15 @@
+/*----------------------------------------------------
+// Theme Light
+----------------------------------------------------*/
+
+:root {
+  --qroko-tx-1: #1a1a1a;
+  --qroko-tx-2: #202020;
+  --qroko-tx-3: #777777;
+  --qroko-bg-1: #ffffff;
+  --qroko-bg-2: #f6f8fa;
+  --qroko-bg-3: #d1d8dc;
+  --qroko-lk-1: #0070f3;
+  --qroko-lk-tx: #ffffff;
+  --qroko-ac-1: #79ffe1;
+}
