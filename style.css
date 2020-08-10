@@ -22,7 +22,7 @@ Text Domain: qroko
 }
 
 html {
-  font-family: var(--font-sans);
+  font-family: var(--qroko-font-sans);
   word-break: break-word;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -30,15 +30,15 @@ html {
 }
 
 body {
-  background: var(--bg-1);
-  color: var(--tx-2);
+  background: var(--qroko-bg-1);
+  color: var(--qroko-tx-2);
   font-size: 1rem;
   line-height: 1.5;
   word-break: break-word;
 }
 
 a {
-  color: var(--lk-1);
+  color: var(--qroko-lk-1);
   text-decoration: underline;
 }
 
@@ -57,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--tx-1);
+  color: var(--qroko-tx-1);
   font-weight: 600;
   font-feature-settings: "palt";
   letter-spacing: 0.0125em;
@@ -106,12 +106,12 @@ p {
 
 blockquote.wp-block-quote {
   padding: 1.5rem;
-  background: var(--bg-2);
-  border-left: 5px solid var(--bg-3);
+  background: var(--qroko-bg-2);
+  border-left: 5px solid var(--qroko-bg-3);
 }
 
 blockquote.wp-block-quote cite {
-  color: var(--tx-2);
+  color: var(--qroko-tx-2);
   font-size: 0.875rem;
   opacity: 0.65;
 }
@@ -129,12 +129,12 @@ input[type="button"] {
   cursor: pointer;
   display: inline-block;
   padding: 6px 12px;
-  background: var(--lk-1);
+  background: var(--qroko-lk-1);
   border: 0;
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 1rem;
-  color: var(--lk-tx);
+  color: var(--qroko-lk-tx);
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
@@ -160,19 +160,19 @@ input[type="reset"]:focus,
 input[type="reset"]:hover,
 input[type="button"]:focus,
 input[type="button"]:hover {
-  background: var(--lk-2);
+  background: var(--qroko-lk-2);
 }
 
 textarea,
 select,
 input {
   padding: 6px 12px;
-  background: var(--bg-2);
-  border: 1px solid var(--bg-3);
+  background: var(--qroko-bg-2);
+  border: 1px solid var(--qroko-bg-3);
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
-  color: var(--tx-2);
+  color: var(--qroko-tx-2);
 }
 
 time {
@@ -182,23 +182,23 @@ time {
 
 code,
 pre {
-  font-family: var(--font-mono);
+  font-family: var(--qroko-font-mono);
 }
 
 pre,
 pre.wp-block-code {
-  color: var(--tx-2);
+  color: var(--qroko-tx-2);
 }
 
 hr {
   border: 0;
-  border-bottom: 1px solid var(--bg-3);
+  border-bottom: 1px solid var(--qroko-bg-3);
 }
 
 .app-header {
   position: relative;
   padding: 16px 0;
-  background-color: var(--bg-1);
+  background-color: var(--qroko-bg-1);
   z-index: 80;
 }
 
@@ -207,14 +207,14 @@ hr {
 }
 
 .app-header + .app-main {
-  border-top: 2px solid var(--bg-2);
+  border-top: 2px solid var(--qroko-bg-2);
 }
 
 .app-header > .app-header-contents {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: calc(var(--site-width) + 16px * 2);
+  max-width: calc(var(--qroko-site-width) + 16px * 2);
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -227,14 +227,14 @@ hr {
 .app-header-site-name {
   flex: none;
   display: flex;
-  color: var(--tx-1);
+  color: var(--qroko-tx-1);
   font-size: 1.25rem;
   font-weight: 900;
   text-decoration: none;
 }
 
 .app-header-description {
-  color: var(--tx-3);
+  color: var(--qroko-tx-3);
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.25;
@@ -242,7 +242,7 @@ hr {
 
 .app-menu {
   position: relative;
-  background-color: var(--bg-1);
+  background-color: var(--qroko-bg-1);
   z-index: 100;
 }
 
@@ -260,14 +260,14 @@ hr {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--bg-2);
+  background-color: var(--qroko-bg-2);
   transform: translateX(-50%);
   z-index: 1;
 }
 
 .app-menu-nav {
   position: relative;
-  max-width: calc(var(--site-width) + 16px * 2);
+  max-width: calc(var(--qroko-site-width) + 16px * 2);
   margin: 0 auto;
   z-index: 2;
 }
@@ -288,7 +288,7 @@ hr {
   position: relative;
   display: flex;
   padding: 12px;
-  color: var(--tx-3);
+  color: var(--qroko-tx-3);
   font-size: 0.875rem;
   font-weight: 500;
   text-decoration: none;
@@ -297,7 +297,7 @@ hr {
 }
 
 .app-menu-nav > ul > li > a:hover {
-  color: var(--tx-2);
+  color: var(--qroko-tx-2);
 }
 
 .app-menu-nav > ul > li > a:after {
@@ -307,7 +307,7 @@ hr {
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: var(--bg-2);
+  background-color: var(--qroko-bg-2);
   transform: translateX(-50%);
   transition: width 0.12s, background-color 0.12s;
   z-index: 2;
@@ -316,7 +316,7 @@ hr {
 .app-menu-nav > ul > li > a:hover:after,
 .app-menu-nav > ul > li.current-menu-item > a:after {
   width: calc(100% - 12px * 2);
-  background-color: var(--ac-1);
+  background-color: var(--qroko-ac-1);
 }
 
 .app-main {
@@ -333,7 +333,7 @@ hr {
 }
 
 .app-main > .app-main-contents {
-  max-width: calc(var(--site-width) + 16px * 2);
+  max-width: calc(var(--qroko-site-width) + 16px * 2);
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -390,11 +390,11 @@ hr {
 .wp-block-table table td,
 .wp-block-table table th {
   padding: 0.5rem;
-  border: 1px solid var(--bg-3);
+  border: 1px solid var(--qroko-bg-3);
 }
 
 .wp-block-table table th {
-  background: var(--bg-2);
+  background: var(--qroko-bg-2);
 }
 
 .wp-block-table table caption {
@@ -403,13 +403,13 @@ hr {
 }
 
 .wp-block-table table tfoot {
-  border-top: 2px solid var(--bg-3);
+  border-top: 2px solid var(--qroko-bg-3);
 }
 
 .wp-block-table figcaption {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
-  color: var(--tx-2);
+  color: var(--qroko-tx-2);
   font-size: 0.875rem;
   opacity: 0.65;
 }
@@ -417,7 +417,7 @@ hr {
 .wp-block-image figcaption {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
-  color: var(--tx-2);
+  color: var(--qroko-tx-2);
   font-size: 0.875rem;
   opacity: 0.65;
 }
@@ -425,10 +425,10 @@ hr {
 .pagination,
 .pager {
   padding-top: 1rem;
-  border-top: 1px solid var(--bg-3);
+  border-top: 1px solid var(--qroko-bg-3);
 }
 
-.smb-btn--full,
+.smb-btn--qroko-full,
 .smb-balloon__body {
   box-sizing: border-box;
 }

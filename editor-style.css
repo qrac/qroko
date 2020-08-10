@@ -14,12 +14,12 @@ html,
 input,
 select,
 button {
-  font-family: var(--font-sans);
+  font-family: var(--qroko-font-sans);
 }
 
 body {
-  background: var(--bg-1);
-  color: var(--tx-2);
+  background: var(--qroko-bg-1);
+  color: var(--qroko-tx-2);
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--tx-1);
+  color: var(--qroko-tx-1);
   font-weight: 600;
   font-feature-settings: "palt";
   letter-spacing: 0.0125em;
@@ -67,14 +67,14 @@ p {
 }
 
 a {
-  color: var(--lk-1);
+  color: var(--qroko-lk-1);
 }
 
 code,
 pre,
 kbd,
 samp {
-  font-family: var(--font-mono);
+  font-family: var(--qroko-font-mono);
 }
 
 ul,
@@ -84,19 +84,19 @@ ol {
 }
 
 .wp-block {
-  max-width: var(--site-width);
+  max-width: var(--qroko-site-width);
 }
 
 .block-editor-default-block-appender
   textarea.block-editor-default-block-appender__content {
-  font-family: var(--font-sans);
+  font-family: var(--qroko-font-sans);
 }
 
 .editor-post-title__block .editor-post-title__input {
-  color: var(--tx-1);
+  color: var(--qroko-tx-1);
   font-size: 2rem;
   font-weight: 600;
-  font-family: var(--font-sans);
+  font-family: var(--qroko-font-sans);
   font-feature-settings: "palt";
   letter-spacing: 0.0125em;
   line-height: 1.25;
@@ -105,19 +105,19 @@ ol {
 
 .wp-block-quote {
   padding: 1.5rem;
-  background: var(--bg-2);
-  border-left: 5px solid var(--bg-3);
+  background: var(--qroko-bg-2);
+  border-left: 5px solid var(--qroko-bg-3);
 }
 
 .wp-block-quote .wp-block-quote__citation {
-  color: var(--tx-2);
+  color: var(--qroko-tx-2);
   font-size: 0.875rem;
   opacity: 0.65;
 }
 
 .block-editor-rich-text__editable code {
-  background: var(--bg-2);
-  border: 1px solid var(--bg-3);
+  background: var(--qroko-bg-2);
+  border: 1px solid var(--qroko-bg-3);
   border-radius: 4px;
   padding: 3px 6px;
   font-size: 0.9rem;
@@ -125,11 +125,11 @@ ol {
 
 .wp-block-code,
 .wp-block-code textarea {
-  background: var(--bg-2);
+  background: var(--qroko-bg-2);
 }
 
 .wp-block-code textarea {
-  color: var(--tx-2);
+  color: var(--qroko-tx-2);
   font-size: 0.9rem;
 }
 
@@ -138,30 +138,30 @@ ol {
 }
 
 .wp-block-table table th {
-  background: var(--bg-2);
+  background: var(--qroko-bg-2);
 }
 
 .wp-block-table table td,
 .wp-block-table table th {
   padding: 0.5rem;
-  border: 1px solid var(--bg-3);
+  border: 1px solid var(--qroko-bg-3);
 }
 
 .wp-block-table table tfoot {
-  border-top: 2px solid var(--bg-3);
+  border-top: 2px solid var(--qroko-bg-3);
 }
 
 .wp-block-table figcaption {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
-  color: var(--tx-2);
+  color: var(--qroko-tx-2);
   font-size: 0.875rem;
   opacity: 0.65;
 }
 
 .wp-block-image figcaption {
   margin-top: 0.5rem;
-  color: var(--tx-2);
+  color: var(--qroko-tx-2);
   font-size: 0.875rem;
   opacity: 0.65;
 }

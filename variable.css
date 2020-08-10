@@ -1,19 +1,19 @@
 :root {
-  --font-sans: "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+  --qroko-font-sans: "Hiragino Sans", "Hiragino Kaku Gothic ProN",
     "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-sans-en: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  --qroko-font-sans-en: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
-  --font-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Meiryo,
-    monospace, serif;
-  --site-width: 620px;
-  --tx-1: #1a1a1a;
-  --tx-2: #202020;
-  --tx-3: #777777;
-  --bg-1: #ffffff;
-  --bg-2: #f6f8fa;
-  --bg-3: #d1d8dc;
-  --lk-1: #0070f3;
-  --lk-tx: #ffffff;
-  --ac-1: #79ffe1;
+  --qroko-font-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    Meiryo, monospace, serif;
+  --qroko-site-width: 620px;
+  --qroko-tx-1: #1a1a1a;
+  --qroko-tx-2: #202020;
+  --qroko-tx-3: #777777;
+  --qroko-bg-1: #ffffff;
+  --qroko-bg-2: #f6f8fa;
+  --qroko-bg-3: #d1d8dc;
+  --qroko-lk-1: #0070f3;
+  --qroko-lk-tx: #ffffff;
+  --qroko-ac-1: #79ffe1;
 }
