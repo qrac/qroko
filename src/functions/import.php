@@ -8,7 +8,7 @@ add_action('wp_enqueue_scripts', function () {
   if ( !is_admin() ) {
     $cssDir = get_template_directory_uri() . '/src/assets/css';
     wp_enqueue_style( 'style', $cssDir . '/style.css' );
-    wp_enqueue_style( 'style-front-variable', $cssDir . '/variable.css' );
+    wp_enqueue_style( 'style-front-theme-variable', $cssDir . '/theme-variable.css' );
     wp_enqueue_style( 'style-front-theme-light', $cssDir . '/theme-light.css' );
     wp_enqueue_style( 'style-front-theme-dark', $cssDir . '/theme-dark.css' );
     wp_enqueue_style( 'style-front', $cssDir . '/front.css' );
