@@ -4,7 +4,7 @@
 //----------------------------------------------------
 
 $includes = array(
-  '/src/functions',
+  '/functions',
 );
 
 foreach ( $includes as $include ) {
