@@ -17,6 +17,6 @@
     </ul>
   <?php endif; ?>
   <?php if (function_exists("pagination")): ?>
-    <?php pagination($additional_loop->max_num_pages);?>
+    <?php theme_qroko_pagination($additional_loop->max_num_pages);?>
   <?php endif; ?>
 </div>

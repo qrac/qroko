@@ -5,7 +5,7 @@
 
 // Add menu
 register_nav_menus(array(
-  'menu_header_main' => 'ヘッダー：メイン',
+  'menu_header_main' => 'ヘッダー',
 ));
 
 // Custom Walker Nav Menu

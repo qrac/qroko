@@ -3,14 +3,13 @@
 // Customizer
 //----------------------------------------------------
 
-// Remove Theme Customizer
-function remove_theme_customizer( $wp_customize ) {
+// Remove
+add_action('customize_register', function($wp_customize) {
   $wp_customize->remove_control('site_icon');
-}
-add_action( 'customize_register', 'remove_theme_customizer' );
+});
 
 // Add Theme Customizer
-function add_theme_customizer($wp_customize) {
+add_action('customize_register', function($wp_customize) {
 
   // Logo, Icon
   $wp_customize   -> add_section( 'logo_section', array(
@@ -164,16 +163,4 @@ function add_theme_customizer($wp_customize) {
       )
     )
   );
-}
-add_action('customize_register', 'add_theme_customizer');
-
-// Get Image URL
-function get_custom_logo_url() {
-  return esc_url(get_theme_mod('logo_url'));
-}
-function get_custom_icon_url() {
-  return esc_url(get_theme_mod('icon_url'));
-}
-function get_custom_favicon_url() {
-  return esc_url(get_theme_mod('favicon_url'));
-}
+});

@@ -4,7 +4,7 @@
 //----------------------------------------------------
 
 // Custom Redirect
-function custom_redirect() {
+add_action('template_redirect', function() {
   $redirect_url = get_option('redirect_url');
   $active_redirect = get_option('active_redirect');
 
@@ -12,5 +12,4 @@ function custom_redirect() {
     wp_redirect( $redirect_url, 301 );
     exit();
   }
-}
-add_action( 'template_redirect', 'custom_redirect' );
+});

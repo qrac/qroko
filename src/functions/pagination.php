@@ -3,7 +3,7 @@
 // Pagination
 //----------------------------------------------------
 
-function pagination($pages = '', $range = 2) {
+function theme_qroko_pagination($pages = '', $range = 2) {
   $showitems = $range * 2 + 1;
   global $paged;
   if (empty($paged)) {
