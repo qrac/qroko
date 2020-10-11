@@ -4,7 +4,7 @@
 //----------------------------------------------------
 ?>
 <div class="page-contents">
-  <?php get_template_part('src/components/app-title'); ?>
+  <?php get_template_part('components/app-title'); ?>
   <?php if (have_posts()): ?>
     <ul>
       <?php while (have_posts()): the_post(); ?>
