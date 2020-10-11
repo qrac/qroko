@@ -205,7 +205,7 @@ hr {
 }
 
 .app-header + .app-main {
-  border-top: 2px solid var(--theme-bg-2);
+  border-top: 1px solid var(--theme-bg-3);
 }
 
 .app-header > .app-header-contents {
