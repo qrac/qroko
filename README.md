@@ -50,6 +50,7 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 - FileBird Lite ([site](https://ja.wordpress.org/plugins/filebird/))
 - Intuitive Custom Post Order ([site](https://ja.wordpress.org/plugins/intuitive-custom-post-order/))
 - JAMstack Deployments ([site](https://ja.wordpress.org/plugins/wp-jamstack-deployments/)/[repo](https://github.com/crgeary/wp-jamstack-deployments))
+- SEO SIMPLE PACK ([site](https://wordpress.org/plugins/seo-simple-pack/))
 - Snow Monkey Blocks ([site](https://ja.wordpress.org/plugins/snow-monkey-blocks/))
 - Snow Monkey Editor ([site](https://ja.wordpress.org/plugins/snow-monkey-editor/))
 - UpdraftPlus ([site](https://ja.wordpress.org/plugins/updraftplus/))
@@ -66,7 +67,6 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 
 - WPGraphQL ([site](https://www.wpgraphql.com/))
   - wp-graphql/wp-graphql - develop ([repo](https://github.com/wp-graphql/wp-graphql))
-  - wp-graphql/wp-graphiql - master ([repo](https://github.com/wp-graphql/wp-graphiql))
   - wp-graphql/wp-graphql-custom-post-type-ui - master ([repo](https://github.com/wp-graphql/wp-graphql-custom-post-type-ui))
   - wp-graphql/wp-graphql-acf - develop ([repo](https://github.com/wp-graphql/wp-graphql-acf))
 - WPGraphQL Gutenberg ([site](https://wp-graphql-gutenberg.netlify.app/))
