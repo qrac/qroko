@@ -455,6 +455,20 @@ hr {
 }
 
 /*----------------------------------------------------
+// Blocks: Core Table
+----------------------------------------------------*/
+
+.wp-block-code {
+  background-color: var(--theme-bg-2);
+  border: 1px solid var(--theme-bg-3);
+  font-family: var(--theme-font-mono);
+  white-space: pre;
+  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*----------------------------------------------------
 // Blocks: Snow Monkey Blocks
 ----------------------------------------------------*/
 
