@@ -23,23 +23,28 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 - 日本語パーマリンクの生成を防ぐ機能
 - ログインユーザー以外をリダイレクトする機能
 
-## Basic Setting
+## Install
 
 1. Zip ファイルを[ダウンロード](https://github.com/qrac/qroko/archive/master.zip)
 2. Zip ファイルを WordPress テーマとしてインストール
 3. テーマ「Qroko」を有効化
 
-## Advanced Setting
-
-1. WP Pusher を[公式サイト](https://wppusher.com/) からダウンロード
-2. WP Pusher をプラグインとしてインストール・有効化
-3. WP Pusher で GitHub 上のテーマ「qrac/qroko」をインストール・有効化
-
 ## Recommended Plugins
 
-### Official and Optimal
+### Qroko
 
 - Qroko Blocks ([site](https://wordpress.org/plugins/qroko-blocks/)/[repo](https://github.com/qrac/qroko-blocks))
+- Qroko My Functions ([repo](https://github.com/qrac/qroko-my-functions)/[download](https://github.com/qrac/qroko-my-functions/archive/master.zip))
+
+### WPGraphQL
+
+- WPGraphQL ([site](https://www.wpgraphql.com/))
+  - wp-graphql/wp-graphql ([site](https://wordpress.org/plugins/wp-graphql/)/[repo](https://github.com/wp-graphql/wp-graphql))
+  - gatsbyjs/wp-gatsby ([site](https://wordpress.org/plugins/wp-gatsby/)/[repo](https://github.com/gatsbyjs/wp-gatsby))
+  - wp-graphql/wp-graphql-custom-post-type-ui - master ([repo](https://github.com/wp-graphql/wp-graphql-custom-post-type-ui))
+  - wp-graphql/wp-graphql-acf - develop ([repo](https://github.com/wp-graphql/wp-graphql-acf))
+- WPGraphQL Gutenberg ([site](https://wp-graphql-gutenberg.netlify.app/))
+  - pristas-peter/wp-graphql-gutenberg - develop ([repo](https://github.com/pristas-peter/wp-graphql-gutenberg))
 
 ### Official
 
@@ -61,20 +66,10 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 - Advanced Custom Fields PRO ([site](https://www.advancedcustomfields.com/pro/))
 - UpdraftPlus Premium ([site](https://updraftplus.com/shop/))
 - yStandard Blocks ([site](https://wp-ystandard.com/plugins/ystandard-blocks/))
-- WP Pusher ([site](https://wppusher.com/))
 
-### GitHub Sync
+## Gatsby Docs
 
-- WPGraphQL ([site](https://www.wpgraphql.com/))
-  - wp-graphql/wp-graphql - develop ([repo](https://github.com/wp-graphql/wp-graphql))
-  - wp-graphql/wp-graphql-custom-post-type-ui - master ([repo](https://github.com/wp-graphql/wp-graphql-custom-post-type-ui))
-  - wp-graphql/wp-graphql-acf - develop ([repo](https://github.com/wp-graphql/wp-graphql-acf))
-- WPGraphQL Gutenberg ([site](https://wp-graphql-gutenberg.netlify.app/))
-  - pristas-peter/wp-graphql-gutenberg - develop ([repo](https://github.com/pristas-peter/wp-graphql-gutenberg))
-
-### Customize
-
-- Qroko My Functions ([repo](https://github.com/qrac/qroko-my-functions)/[download](https://github.com/qrac/qroko-my-functions/archive/master.zip))
+- [gatsbyjs/gatsby-source-wordpress-experimental](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental)
 
 ## License
 
