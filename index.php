@@ -7,6 +7,7 @@
 <html <?php language_attributes(); ?>>
 <?php get_template_part('components/app-head'); ?>
 <body <?php body_class(); ?>>
+  <?php wp_body_open(); ?>
   <?php get_template_part('components/app-header'); ?>
   <?php get_template_part('components/app-nav'); ?>
   <main class="app-main">

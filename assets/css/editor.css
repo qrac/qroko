@@ -181,19 +181,3 @@ ol {
   font-size: 0.875rem;
   opacity: 0.65;
 }
-
-/*----------------------------------------------------
-// Blocks: Snow Monkey Blocks
-----------------------------------------------------*/
-
-.smb-testimonial .components-button {
-  height: 48px;
-}
-
-.smb-balloon .components-button {
-  height: 54px;
-}
-
-.smb-panels__item__link {
-  word-break: break-all;
-}

@@ -467,16 +467,3 @@ hr {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
-
-/*----------------------------------------------------
-// Blocks: Snow Monkey Blocks
-----------------------------------------------------*/
-
-.smb-btn--theme-full,
-.smb-balloon__body {
-  box-sizing: border-box;
-}
-
-.smb-panels__item__figure > img {
-  height: auto;
-}
