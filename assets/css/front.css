@@ -40,6 +40,10 @@ a:hover {
   text-decoration: none;
 }
 
+figure {
+  max-width: 100%;
+}
+
 img {
   max-width: 100%;
   height: auto;
