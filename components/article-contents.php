@@ -1,10 +1,8 @@
 <?php
 //----------------------------------------------------
-// 404
+// Article Contents
 //----------------------------------------------------
 ?>
-<div class="page-contents">
-  <article class="article">
-    <p>404</p>
-  </article>
+<div class="article-contents">
+  <?php the_content(); ?>
 </div>

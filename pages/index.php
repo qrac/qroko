@@ -4,7 +4,9 @@
 //----------------------------------------------------
 ?>
 <div class="page-contents">
-  <?php get_template_part('components/app-title'); ?>
+  <article class="article">
+    <?php get_template_part('components/article-title'); ?>
+  </article>
   <?php if (have_posts()): ?>
     <ul>
       <?php while (have_posts()): the_post(); ?>

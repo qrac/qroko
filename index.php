@@ -15,7 +15,7 @@
       <?php get_template_part('pages/404'); ?>
     <?php elseif(is_page()): ?>
       <?php get_template_part('pages/page'); ?>
-    <?php elseif(is_singular()): ?>
+    <?php elseif(is_single()): ?>
       <?php get_template_part('pages/single'); ?>
     <?php else: ?>
       <?php get_template_part('pages/index'); ?>
