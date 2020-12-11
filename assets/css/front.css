@@ -40,7 +40,9 @@ a:hover {
   text-decoration: none;
 }
 
-figure {
+figure,
+.wp-caption,
+.gallery-caption {
   max-width: 100%;
 }
 
@@ -399,7 +401,8 @@ hr {
 // Blocks: Core Image
 ----------------------------------------------------*/
 
-.wp-block-image figcaption {
+.wp-block-image figcaption,
+.wp-caption-text {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   color: var(--theme-tx-2);
@@ -463,4 +466,66 @@ hr {
   overflow: hidden;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+/*----------------------------------------------------
+// Theme Default
+----------------------------------------------------*/
+
+.sticky {
+  position: relative;
+}
+
+.bypostauthor {
+  padding: 2px;
+  border: 1px solid var(--theme-tx-2);
+}
+
+.alignleft {
+  float: left;
+  display: inline;
+  margin-right: 1.5em;
+}
+
+.alignright {
+  float: right;
+  display: inline;
+  margin-left: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
 }
