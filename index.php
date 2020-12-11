@@ -11,11 +11,11 @@
   <?php get_template_part('components/app-header'); ?>
   <?php get_template_part('components/app-nav'); ?>
   <main class="app-main">
-    <?php if( is_404() ): ?>
+    <?php if(is_404()): ?>
       <?php get_template_part('pages/404'); ?>
-    <?php elseif( is_page() ): ?>
+    <?php elseif(is_page()): ?>
       <?php get_template_part('pages/page'); ?>
-    <?php elseif( is_singular() ): ?>
+    <?php elseif(is_singular()): ?>
       <?php get_template_part('pages/single'); ?>
     <?php else: ?>
       <?php get_template_part('pages/index'); ?>

@@ -10,7 +10,7 @@
     <?php printf( esc_html__('検索結果: %s'), '' . get_search_query() . ''); ?>
   <?php elseif (is_archive()): ?>
     <?php single_cat_title(); ?>
-  <?php elseif (is_single()): ?>
+  <?php elseif (is_singular()): ?>
     <?php the_title(); ?>
   <?php else: ?>
     <?php the_title(); ?>

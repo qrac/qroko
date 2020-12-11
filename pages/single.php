@@ -7,10 +7,7 @@
   <?php if (have_posts()): ?>
     <article class="article">
       <?php while (have_posts()): the_post(); ?>
-        <?php
-          $preview_add_thumbnail = get_option('preview_add_thumbnail');
-          if (has_post_thumbnail() && $preview_add_thumbnail):
-        ?>
+        <?php if (has_post_thumbnail()): ?>
           <div class="article-thumbnail-wrap">
             <?php the_post_thumbnail('large'); ?>
           </div>
