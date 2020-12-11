@@ -4,12 +4,13 @@
 //----------------------------------------------------
 ?>
 <p class="article-date">
-  <time datetime="<?php the_time('Y-m-d'); ?>T<?php the_time('H:i:sP'); ?>">
-    公開日：<?php the_time('Y年n月j日'); ?>
+  <time datetime="<?php echo esc_attr(get_the_time('Y-m-d')); ?>">
+    <?php esc_html_e('Published', 'qroko'); ?>: <?php the_time(get_option('date_format')) ?>
   </time>
-  <?php if (get_the_modified_time('Y-m-d') != get_the_time('Y-m-d')) : ?>
-    <time datetime="<?php the_modified_time('Y-m-d'); ?>T<?php the_modified_time('H:i:sP'); ?>">
-      （最終更新日：<?php the_modified_time('Y年n月j日') ?>）
+  <?php if(get_the_time('Y-m-d') < get_the_modified_time('Y-m-d')): ?>
+    <span> / </span>
+    <time datetime="<?php echo esc_attr(get_the_modified_time('c')); ?>">
+      <?php esc_html_e('Updated', 'qroko'); ?>: <?php the_modified_date(get_option('date_format')) ?>
     </time>
   <?php endif; ?>
 </p>

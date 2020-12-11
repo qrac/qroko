@@ -5,9 +5,9 @@
 ?>
 <h1 class="article-title">
   <?php if (is_home() || is_front_page()): ?>
-    Home
+    <?php _e('Home', 'qroko'); ?>
   <?php elseif (is_search()): ?>
-    <?php printf(esc_html__('検索結果: %s'), '' . get_search_query() . ''); ?>
+    <?php printf(esc_html_e('Search Results: %s', 'qroko'), '' . get_search_query() . ''); ?>
   <?php elseif (is_archive()): ?>
     <?php single_cat_title(); ?>
   <?php elseif (is_singular()): ?>
