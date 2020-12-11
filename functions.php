@@ -3,6 +3,7 @@
 // Functions
 //----------------------------------------------------
 
+require_once('functions/init.php');
 require_once('functions/editors.php');
 require_once('functions/fronts.php');
 require_once('functions/menu.php');
