@@ -5,12 +5,13 @@
 
 add_filter('wp_link_pages_args', function() {
   $defaults = array(
-    'before' => '<nav class="pager"><span class="pager-title">ページ：</span>',
+    'before' => '<nav class="pager"><span class="pager-title">Page: </span>',
     'after' => '</nav>',
     'link_before' => '',
     'link_after' => '',
+    'aria_current' => 'page',
     'next_or_number' => 'number',
-    'separator' => '',
+    'separator' => ' / ',
     'nextpagelink' => __('Next page'),
     'previouspagelink' => __('Previous page'),
     'pagelink' => '<span>%</span>',
