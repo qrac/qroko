@@ -3,7 +3,7 @@
 // Pagination
 //----------------------------------------------------
 
-function theme_qroko_pagination($pages = '', $range = 2) {
+function qroko_pagination($pages = '', $range = 2) {
   $showitems = $range * 2 + 1;
   global $paged;
   if (empty($paged)) {
@@ -26,9 +26,9 @@ function theme_qroko_pagination($pages = '', $range = 2) {
         "\">First</a> / ";
     }
     if ($paged > 1 && $showitems < $pages) {
-      echo " / <a href=\"" .
+      echo "<a href=\"" .
         get_pagenum_link($paged - 1) .
-        "\">Prev</a> / ";
+        "\">Prev</a>";
     }
     for ($i = 1; $i <= $pages; $i++) {
       if (
@@ -41,7 +41,7 @@ function theme_qroko_pagination($pages = '', $range = 2) {
             ? "<span>" .
               $i .
               "</span>"
-            : "<a href=\"" .
+            : " / <a href=\"" .
               get_pagenum_link($i) .
               "\">" .
               $i .
