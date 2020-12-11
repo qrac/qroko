@@ -248,13 +248,6 @@ hr {
   z-index: 100;
 }
 
-@media (min-width: 992px) {
-  .app-nav {
-    position: sticky;
-    top: 0;
-  }
-}
-
 .app-nav:after {
   content: "";
   position: absolute;
