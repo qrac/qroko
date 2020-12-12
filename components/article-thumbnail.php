@@ -3,7 +3,10 @@
 // Article Thumbnail
 //----------------------------------------------------
 ?>
-<?php if (has_post_thumbnail()): ?>
+<?php
+  $qroko_page_top_thumbnail = get_option('qroko_page_top_thumbnail');
+  if (has_post_thumbnail() && $qroko_page_top_thumbnail):
+?>
   <div class="article-thumbnail-wrap">
     <?php the_post_thumbnail('large'); ?>
   </div>

@@ -17,3 +17,15 @@ function qroko_import_editor_styles() {
   add_editor_style('assets/css/editor.css');
 }
 add_action('after_setup_theme', 'qroko_import_editor_styles');
+
+// Custom editor max site width
+function qroko_custom_editor_max_site_width() {
+  $max_site_width = get_option('qroko_max_site_width');
+
+  if($max_site_width != null && $max_site_width > 0) {
+    echo '<style>' .
+      ':root .editor-styles-wrapper { --theme-site-width: ' . $max_site_width . 'px; }' .
+      '</style>';
+  }
+}
+add_action('admin_head', 'qroko_custom_editor_max_site_width');
