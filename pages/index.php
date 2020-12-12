@@ -3,7 +3,7 @@
 // Index
 //----------------------------------------------------
 ?>
-<div class="page-contents">
+<div class="app-contents">
   <article class="article">
     <?php get_template_part('components/article-title'); ?>
   </article>

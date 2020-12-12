@@ -166,13 +166,14 @@ input[type="button"]:hover {
 textarea,
 select,
 input {
-  padding: 6px 12px;
+  padding: 5px 12px;
   background: var(--theme-bg-2);
   border: 1px solid var(--theme-bg-3);
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
   color: var(--theme-tx-2);
+  font-size: 1rem;
 }
 
 code,
@@ -322,36 +323,67 @@ hr {
 .app-main {
   position: relative;
   display: block;
-  padding-top: 16px;
+  padding-top: 32px;
   padding-bottom: 40vh;
 }
 
-@media (min-width: 992px) {
-  .app-main {
-    padding-top: 32px;
-  }
-}
-
-.app-main > .page-contents {
-  max-width: calc(var(--theme-site-width) + 16px * 2);
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
 /*----------------------------------------------------
-// Page Contents
+// App Contents
 ----------------------------------------------------*/
 
-.page-contents > *:not(:first-child) {
+.app-contents {
+  max-width: calc(var(--theme-site-width) + 16px * 2);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.app-contents > *:not(:first-child) {
   margin-top: 2rem;
 }
 
-.page-contents ol,
-.page-contents ul {
+.app-contents ol,
+.app-contents ul {
   padding-left: 2rem;
 }
 
-.page-contents li {
+.app-contents li {
+  margin-top: 0.4rem;
+  line-height: 1.6875;
+}
+
+/*----------------------------------------------------
+// App Widget
+----------------------------------------------------*/
+
+.app-widget {
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid var(--theme-bg-3);
+}
+
+.app-widget-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+  max-width: calc(var(--theme-site-width) + 16px * 2);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.app-widget-column > *:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.app-widget-column ol,
+.app-widget-column ul {
+  padding-left: 2rem;
+}
+
+.app-widget-column li {
   margin-top: 0.4rem;
   line-height: 1.6875;
 }

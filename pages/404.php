@@ -3,7 +3,7 @@
 // 404
 //----------------------------------------------------
 ?>
-<div class="page-contents">
+<div class="app-contents">
   <article class="article">
     <p>404</p>
   </article>

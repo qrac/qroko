@@ -20,6 +20,7 @@
     <?php else: ?>
       <?php get_template_part('pages/index'); ?>
     <?php endif; ?>
+    <?php get_template_part('components/app-widget'); ?>
   </main>
   <?php get_template_part('components/app-footer'); ?>
 </body>

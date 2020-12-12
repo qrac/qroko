@@ -3,7 +3,7 @@
 // Page
 //----------------------------------------------------
 ?>
-<div class="page-contents">
+<div class="app-contents">
   <?php if (have_posts()): ?>
     <article class="article">
       <?php while (have_posts()): the_post(); ?>
