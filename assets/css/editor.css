@@ -181,3 +181,15 @@ ol {
   font-size: 0.875rem;
   opacity: 0.65;
 }
+
+/*----------------------------------------------------
+// Theme Support: Align Wide
+----------------------------------------------------*/
+
+.wp-block[data-align="wide"] {
+  max-width: max(70%, var(--theme-site-width));
+}
+
+.wp-block[data-align="full"] {
+  max-width: none;
+}

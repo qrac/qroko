@@ -325,6 +325,7 @@ hr {
   display: block;
   padding-top: 32px;
   padding-bottom: 40vh;
+  overflow: hidden;
 }
 
 /*----------------------------------------------------
@@ -337,6 +338,12 @@ hr {
   margin-left: auto;
   padding-right: 16px;
   padding-left: 16px;
+}
+
+.article-contents:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .app-contents > *:not(:first-child) {
@@ -501,7 +508,25 @@ hr {
 }
 
 /*----------------------------------------------------
-// Theme Required CSS
+// Theme Support: Align Wide
+----------------------------------------------------*/
+
+.alignwide {
+  max-width: max(70vw, calc(100% + 16px));
+  width: max(70vw, calc(100% + 16px));
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.alignfull {
+  max-width: calc(100vw - var(--scrollbar-width, 0px));
+  width: calc(100vw - var(--scrollbar-width, 0px));
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+/*----------------------------------------------------
+// Theme Support: Required CSS
 ----------------------------------------------------*/
 
 .sticky {
