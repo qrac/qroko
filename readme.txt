@@ -1,6 +1,6 @@
 === Qroko ===
 Contributors: qrac
-Tags: one-column, custom-menu, featured-images, sticky-post, blog, block-styles
+Tags: one-column, custom-menu, featured-images, sticky-post, blog, block-styles, wide-blocks, theme-options
 Requires at least: 5.4
 Tested up to: 5.6
 Requires PHP: 5.6
