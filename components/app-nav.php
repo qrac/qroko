@@ -3,7 +3,7 @@
 // App Nav
 //----------------------------------------------------
 ?>
-<?php if(has_nav_menu('menu_header_main')): ?>
+<?php if (has_nav_menu('menu_header_main')): ?>
   <nav class="app-nav">
     <div class="app-nav-menu">
       <?php wp_nav_menu(array(

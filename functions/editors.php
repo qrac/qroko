@@ -25,7 +25,7 @@ add_action('after_setup_theme', 'qroko_import_editor_styles');
 function qroko_custom_editor_max_site_width() {
   $max_site_width = get_option('qroko_max_site_width');
 
-  if($max_site_width != null && $max_site_width > 0) {
+  if ($max_site_width != null && $max_site_width > 0) {
     echo '<style>' .
       ':root .editor-styles-wrapper { --theme-site-width: ' . $max_site_width . 'px; }' .
       '</style>';

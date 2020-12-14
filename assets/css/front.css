@@ -407,19 +407,16 @@ hr {
   margin-top: 0.5rem;
 }
 
-.article-date {
+.article-meta {
+  color: var(--theme-tx-3);
   font-size: 0.875rem;
-  opacity: 0.5;
 }
 
-.article-cover {
-  margin-bottom: 2rem;
-}
-
-@media (min-width: 992px) {
-  .article-cover {
-    margin-bottom: 3rem;
-  }
+.article-date,
+.article-category,
+.article-tag {
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 .article-contents > *:not(:first-child) {

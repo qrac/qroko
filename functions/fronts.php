@@ -29,7 +29,7 @@ add_action('wp_enqueue_scripts', 'qroko_import_front_styles');
 function qroko_custom_front_max_site_width() {
   $max_site_width = get_option('qroko_max_site_width');
 
-  if($max_site_width != null && $max_site_width > 0) {
+  if ($max_site_width != null && $max_site_width > 0) {
     echo '<style>' .
       ':root body { --theme-site-width: ' . $max_site_width . 'px; }' .
       '</style>';

@@ -18,7 +18,7 @@
       <?php endwhile; ?>
     </ul>
   <?php endif; ?>
-  <?php if(function_exists('qroko_pagination')){
+  <?php if (function_exists('qroko_pagination')) {
     qroko_pagination($wp_query->max_num_page);
   }?>
 </div>
