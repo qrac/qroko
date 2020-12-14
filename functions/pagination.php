@@ -24,7 +24,7 @@ function qroko_pagination($pages = '', $range = 2) {
       echo '<a href="' . get_pagenum_link(1) . '">' . __('First', 'qroko') . '</a> / ';
     }
     if ($paged > 1 && $showitems < $pages) {
-      echo '<a href="' . get_pagenum_link($paged - 1) . '">' . __('Prev', 'qroko') . '</a>';
+      previous_posts_link(__('Prev', 'qroko'));
     }
     for ($i = 1; $i <= $pages; $i++) {
       if (
@@ -51,7 +51,8 @@ function qroko_pagination($pages = '', $range = 2) {
       echo ' / <a href="' . get_pagenum_link($paged + 1) . '">...</a>';
     }
     if ($paged < $pages && $showitems < $pages) {
-      echo ' / <a href="' . get_pagenum_link($paged + 1) . '">' . __('Next', 'qroko') . '</a>';
+      echo ' / ';
+      next_posts_link(__('Next', 'qroko'));
     }
     if (
       $paged < $pages - 1 &&
