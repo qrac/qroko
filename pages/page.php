@@ -5,7 +5,7 @@
 ?>
 <div class="app-contents">
   <?php if (have_posts()): ?>
-    <article class="article">
+    <article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?>>
       <?php while (have_posts()): the_post(); ?>
         <?php get_template_part('components/article-thumbnail'); ?>
         <?php get_template_part('components/article-header'); ?>
