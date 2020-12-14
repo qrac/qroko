@@ -24,19 +24,34 @@ function qroko_customize_register($wp_customize) {
     'priority' => 100
   ));
 
-  // Page top thumbnail
-  $wp_customize->add_setting('qroko_page_top_thumbnail', array(
+  // Hide page thumbnail
+  $wp_customize->add_setting('qroko_hide_page_thumbnail', array(
     'default' => false,
     'type' => 'option',
     'sanitize_callback' => 'qroko_sanitize_checkbox'
   ));
-  $wp_customize->add_control('qroko_page_top_thumbnail', array(
-    'label' => __('Display thumbnails at the top of the page', 'qroko'),
+  $wp_customize->add_control('qroko_hide_page_thumbnail', array(
+    'label' => __('Hide thumbnail in page top', 'qroko'),
     'description' => '',
     'section' => 'title_tagline',
-    'settings' => 'qroko_page_top_thumbnail',
+    'settings' => 'qroko_hide_page_thumbnail',
     'type' => 'checkbox',
     'priority' => 110
+  ));
+
+  // Hide post navigation
+  $wp_customize->add_setting('qroko_hide_post_navigation', array(
+    'default' => false,
+    'type' => 'option',
+    'sanitize_callback' => 'qroko_sanitize_checkbox'
+  ));
+  $wp_customize->add_control('qroko_hide_post_navigation', array(
+    'label' => __('Hide previous/next navigation in post', 'qroko'),
+    'description' => '',
+    'section' => 'title_tagline',
+    'settings' => 'qroko_hide_post_navigation',
+    'type' => 'checkbox',
+    'priority' => 120
   ));
 
   // Sanitize checkbox

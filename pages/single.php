@@ -14,4 +14,10 @@
       <?php wp_link_pages(); ?>
     </article>
   <?php endif; ?>
+  <?php
+    $qroko_hide_post_navigation = get_option('qroko_hide_post_navigation');
+    if (!$qroko_hide_post_navigation):
+  ?>
+    <?php the_post_navigation(); ?>
+  <?php endif; ?>
 </div>

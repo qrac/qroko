@@ -424,15 +424,54 @@ hr {
 }
 
 /*----------------------------------------------------
-// Pager & Pagination
+// Pager & Pagination & Navigation
 ----------------------------------------------------*/
 
 .pager,
-.pagination {
+.pagination,
+.navigation {
   padding-top: 1rem;
   border-top: 1px solid var(--theme-bg-3);
   color: var(--theme-tx-3);
   font-size: 0.875rem;
+}
+
+.navigation .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navigation .nav-links .nav-previous,
+.navigation .nav-links .nav-next {
+  flex: 1 0 0;
+  display: flex;
+  align-items: center;
+  padding: 0 0.25rem;
+}
+
+.navigation .nav-links .nav-next {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.navigation .nav-links .nav-previous:before,
+.navigation .nav-links .nav-next:after {
+  content: "";
+  top: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-top: 1px solid var(--theme-tx-3);
+  border-right: 1px solid var(--theme-tx-3);
+}
+
+.navigation .nav-links .nav-previous:before {
+  margin-right: 0.25rem;
+  transform: rotate(-135deg);
+}
+
+.navigation .nav-links .nav-next:after {
+  margin-left: 0.25rem;
+  transform: rotate(45deg);
 }
 
 /*----------------------------------------------------
