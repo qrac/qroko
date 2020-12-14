@@ -431,6 +431,8 @@ hr {
 .pagination {
   padding-top: 1rem;
   border-top: 1px solid var(--theme-bg-3);
+  color: var(--theme-tx-3);
+  font-size: 0.875rem;
 }
 
 /*----------------------------------------------------
