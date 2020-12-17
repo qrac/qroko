@@ -457,7 +457,6 @@ hr {
 .navigation .nav-links .nav-previous:before,
 .navigation .nav-links .nav-next:after {
   content: "";
-  top: 50%;
   width: 0.5rem;
   height: 0.5rem;
   border-top: 1px solid var(--theme-tx-3);
