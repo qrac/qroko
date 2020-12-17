@@ -17,16 +17,3 @@ add_theme_support('html5', array(
   'gallery',
   'caption',
 ));
-
-// Support post formats
-add_theme_support('post-formats', array(
-  'aside',
-  'image',
-  'video',
-  'quote',
-  'link',
-  'gallery',
-  'status',
-  'audio',
-  'chat',
-));

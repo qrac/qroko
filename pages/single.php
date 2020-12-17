@@ -10,6 +10,7 @@
         <?php get_template_part('components/article-thumbnail'); ?>
         <?php get_template_part('components/article-header'); ?>
         <?php get_template_part('components/article-contents'); ?>
+        <?php comments_template(); ?>
       <?php endwhile; ?>
       <?php wp_link_pages(); ?>
     </article>
