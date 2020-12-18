@@ -16,12 +16,11 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 
 - Gutenberg
 - GraphQL（WPGraphQL プラグインが必要）
-- REST API（遅いし負荷も大きいので GraphQL 推奨）
 - 最低限のファイル構成
 - 最低限の投稿プレビュー
 - 投稿プレビューの幅を変更する機能
-- 日本語パーマリンクの生成を防ぐ機能
-- ログインユーザー以外をリダイレクトする機能
+- ~~日本語パーマリンクの生成を防ぐ機能~~（別プラグイン化を予定）
+- ~~ログインユーザー以外をリダイレクトする機能~~（別プラグイン化を予定）
 
 ## Install
 
@@ -33,8 +32,9 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 
 ### Qroko
 
-- Qroko Blocks ([site](https://wordpress.org/plugins/qroko-blocks/)/[repo](https://github.com/qrac/qroko-blocks))
+- Qroko Functions ([repo](https://github.com/qrac/qroko-functions))
 - Qroko My Functions ([repo](https://github.com/qrac/qroko-my-functions)/[download](https://github.com/qrac/qroko-my-functions/archive/master.zip))
+- Qroko Blocks ([site](https://wordpress.org/plugins/qroko-blocks/)/[repo](https://github.com/qrac/qroko-blocks))
 
 ### WPGraphQL
 
