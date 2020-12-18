@@ -11,7 +11,7 @@
     "url": "https://qranoko.jp"
   },
   "scripts": {
-    "pot": "wp i18n make-pot ./",
+    "pot": "wp i18n make-pot . languages/qroko.pot",
     "zip": "bash ./tasks/zip.sh",
     "clean": "trash ./build"
   },
