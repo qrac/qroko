@@ -13,7 +13,7 @@
   "scripts": {
     "pot": "wp i18n make-pot . languages/qroko.pot",
     "zip": "bash ./tasks/zip.sh",
-    "clean": "trash ./build"
+    "clean": "trash ./dist"
   },
   "devDependencies": {
     "bestzip": "^2.1.7",
