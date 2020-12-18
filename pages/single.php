@@ -10,15 +10,15 @@
         <?php get_template_part('components/article-thumbnail'); ?>
         <?php get_template_part('components/article-header'); ?>
         <?php get_template_part('components/article-contents'); ?>
-        <?php comments_template(); ?>
       <?php endwhile; ?>
       <?php wp_link_pages(); ?>
     </article>
-  <?php endif; ?>
-  <?php
-    $qroko_hide_post_navigation = get_option('qroko_hide_post_navigation');
-    if (!$qroko_hide_post_navigation):
-  ?>
-    <?php the_post_navigation(); ?>
+    <?php comments_template(); ?>
+    <?php
+      $qroko_hide_post_navigation = get_option('qroko_hide_post_navigation');
+      if (!$qroko_hide_post_navigation):
+    ?>
+      <?php the_post_navigation(); ?>
+    <?php endif; ?>
   <?php endif; ?>
 </div>

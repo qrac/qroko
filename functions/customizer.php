@@ -54,6 +54,21 @@ function qroko_customize_register($wp_customize) {
     'priority' => 120
   ));
 
+  // Hide post comment
+  $wp_customize->add_setting('qroko_hide_post_comment', array(
+    'default' => false,
+    'type' => 'option',
+    'sanitize_callback' => 'qroko_sanitize_checkbox'
+  ));
+  $wp_customize->add_control('qroko_hide_post_comment', array(
+    'label' => __('Hide comment field in all post', 'qroko'),
+    'description' => '',
+    'section' => 'title_tagline',
+    'settings' => 'qroko_hide_post_comment',
+    'type' => 'checkbox',
+    'priority' => 130
+  ));
+
   // Sanitize checkbox
   function qroko_sanitize_checkbox($checked){
     return ((isset($checked) && true == $checked) ? true : false);
