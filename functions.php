@@ -11,5 +11,4 @@ require_once('functions/menu.php');
 require_once('functions/pager.php');
 require_once('functions/pagination.php');
 require_once('functions/support.php');
-require_once('functions/thumbnail.php');
 require_once('functions/widget.php');
