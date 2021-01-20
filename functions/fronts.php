@@ -5,13 +5,13 @@
 
 // Import front styles
 function qroko_import_front_styles() {
-  define("TEMPLATE_DIRE", get_template_directory_uri());
-  define("TEMPLATE_PATH", get_template_directory());
+  define("QROKO_TEMPLATE_DIRE", get_template_directory_uri());
+  define("QROKO_TEMPLATE_PATH", get_template_directory());
 
   function wp_fronts_css($css_name, $file_path) {
     wp_enqueue_style(
-      $css_name, TEMPLATE_DIRE . $file_path, array(),
-      date('YmdGis', filemtime(TEMPLATE_PATH . $file_path))
+      $css_name, QROKO_TEMPLATE_DIRE . $file_path, array(),
+      date('YmdGis', filemtime(QROKO_TEMPLATE_PATH . $file_path))
     );
   }
 
