@@ -1,9 +1,6 @@
 <?php
 //----------------------------------------------------
-// Menu
+// Comments
 //----------------------------------------------------
-
-// Add menu
-register_nav_menus(array(
-  'menu_header_main' => __('Header Main', 'qroko'),
-));
+?>
+<?php get_template_part('components/app-comments'); ?>

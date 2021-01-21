@@ -1,0 +1,22 @@
+{
+  "name": "qroko",
+  "repository": "https://qrac@github.com/qrac/qroko.git",
+  "license": "GPL-2.0+",
+  "author": {
+    "name": "Qrac",
+    "url": "https://qrac.jp"
+  },
+  "organization": {
+    "name": "QRANOKO",
+    "url": "https://qranoko.jp"
+  },
+  "scripts": {
+    "pot": "wp i18n make-pot . languages/qroko.pot",
+    "zip": "bash ./tasks/zip.sh",
+    "clean": "trash ./dist"
+  },
+  "devDependencies": {
+    "bestzip": "^2.1.7",
+    "cpx": "^1.5.0"
+  }
+}

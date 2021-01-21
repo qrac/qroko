@@ -183,17 +183,13 @@ ol {
 }
 
 /*----------------------------------------------------
-// Blocks: Snow Monkey Blocks
+// Theme Support: Align Wide
 ----------------------------------------------------*/
 
-.smb-testimonial .components-button {
-  height: 48px;
+.wp-block[data-align="wide"] {
+  max-width: max(70%, var(--theme-site-width));
 }
 
-.smb-balloon .components-button {
-  height: 54px;
-}
-
-.smb-panels__item__link {
-  word-break: break-all;
+.wp-block[data-align="full"] {
+  max-width: none;
 }

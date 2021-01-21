@@ -3,30 +3,36 @@
 // Support
 //----------------------------------------------------
 
-// Support title tag
-add_theme_support( 'title-tag' );
+// Custom theme support
+function qroko_custom_theme_support() {
 
-// Support default rss feed
-add_theme_support( 'automatic-feed-links' );
+  // Support title tag
+  add_theme_support('title-tag');
 
-// Support html5
-add_theme_support( 'html5', array(
-  'search-form',
-  //'comment-form',
-  //'comment-list',
-  'gallery',
-  'caption',
-));
+  // Support default rss feed
+  add_theme_support('automatic-feed-links');
 
-// Support post formats
-add_theme_support( 'post-formats', array(
-  'aside',
-  'image',
-  'video',
-  'quote',
-  'link',
-  'gallery',
-  'status',
-  'audio',
-  'chat',
-));
+  // Support html5
+  add_theme_support('html5', array(
+    'search-form',
+    'comment-form',
+    'comment-list',
+    'gallery',
+    'caption',
+  ));
+
+  // Support thumbnail
+  add_theme_support('post-thumbnails');
+
+  // Support Gutenberg
+  add_theme_support('wp-block-styles');
+
+  // Support editor styles
+  add_theme_support('editor-styles');
+
+  // Support align wide
+  add_theme_support('align-wide');
+
+}
+add_action('after_setup_theme', 'qroko_custom_theme_support');
+

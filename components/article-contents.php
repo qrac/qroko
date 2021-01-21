@@ -1,9 +1,8 @@
 <?php
 //----------------------------------------------------
-// Menu
+// Article Contents
 //----------------------------------------------------
-
-// Add menu
-register_nav_menus(array(
-  'menu_header_main' => __('Header Main', 'qroko'),
-));
+?>
+<div class="article-contents">
+  <?php the_content(); ?>
+</div>

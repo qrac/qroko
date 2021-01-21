@@ -3,7 +3,7 @@
 // Pagination
 //----------------------------------------------------
 
-function theme_qroko_pagination($pages = '', $range = 2) {
+function qroko_pagination($pages = '', $range = 2) {
   $showitems = $range * 2 + 1;
   global $paged;
   if (empty($paged)) {
@@ -19,16 +19,12 @@ function theme_qroko_pagination($pages = '', $range = 2) {
   }
 
   if (1 != $pages) {
-    echo "<nav class=\"pagination\"><span>Page: </span>";
+    echo '<nav class="pagination"><span>' . __('Page', 'qroko') . ': </span>';
     if ($paged > 2 && $paged > $range + 1 && $showitems < $pages) {
-      echo "<a href=\"" .
-        get_pagenum_link(1) .
-        "\">First</a> / ";
+      echo '<a href="' . esc_url(get_pagenum_link(1)) . '">' . __('First', 'qroko') . '</a> / ';
     }
     if ($paged > 1 && $showitems < $pages) {
-      echo " / <a href=\"" .
-        get_pagenum_link($paged - 1) .
-        "\">Prev</a> / ";
+      previous_posts_link(__('Prev', 'qroko'));
     }
     for ($i = 1; $i <= $pages; $i++) {
       if (
@@ -38,24 +34,12 @@ function theme_qroko_pagination($pages = '', $range = 2) {
       ) {
         if ($i == 1) {
           echo $paged == $i
-            ? "<span>" .
-              $i .
-              "</span>"
-            : "<a href=\"" .
-              get_pagenum_link($i) .
-              "\">" .
-              $i .
-              "</a>";
+            ? '<span>' . $i . '</span>'
+            : ' / <a href="' . esc_url(get_pagenum_link($i)) . '">' . $i . '</a>';
         } else {
           echo $paged == $i
-            ? " / <span>" .
-              $i .
-              "</span>"
-            : " / <a href=\"" .
-              get_pagenum_link($i) .
-              "\">" .
-              $i .
-              "</a>";
+            ? ' / <span>' . $i . '</span>'
+            : ' / <a href="' . esc_url(get_pagenum_link($i)) . '">' . $i . '</a>';
         }
       }
     }
@@ -64,23 +48,18 @@ function theme_qroko_pagination($pages = '', $range = 2) {
       $paged + $range - 1 < $pages &&
       $showitems < $pages
     ) {
-      echo " / <a href=\"" .
-        get_pagenum_link($paged + 1) .
-        "\">...</a>";
+      echo ' / <a href="' . esc_url(get_pagenum_link($paged + 1)) . '">...</a>';
     }
     if ($paged < $pages && $showitems < $pages) {
-      echo " / <a href=\"" .
-        get_pagenum_link($paged + 1) .
-        "\">Next</a>";
+      echo ' / ';
+      next_posts_link(__('Next', 'qroko'));
     }
     if (
       $paged < $pages - 1 &&
       $paged + $range - 1 < $pages &&
       $showitems < $pages
     ) {
-      echo " / <a href=\"" .
-        get_pagenum_link($pages) .
-        "\">Last</a>";
+      echo ' / <a href="' . esc_url(get_pagenum_link($pages)) . '">' . __('Last', 'qroko') . '</a>';
     }
     echo "</nav>";
   }

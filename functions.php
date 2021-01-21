@@ -3,13 +3,12 @@
 // Functions
 //----------------------------------------------------
 
-$includes = array(
-  '/functions',
-);
-
-foreach ( $includes as $include ) {
-  foreach ( glob( __DIR__ . $include . '/*.php' ) as $file ) {
-    $template_name = str_replace( array( trailingslashit( __DIR__ ), '.php' ), '', $file );
-    get_template_part( $template_name );
-  }
-}
+require_once('functions/init.php');
+require_once('functions/customizer.php');
+require_once('functions/editors.php');
+require_once('functions/fronts.php');
+require_once('functions/menu.php');
+require_once('functions/pager.php');
+require_once('functions/pagination.php');
+require_once('functions/support.php');
+require_once('functions/widget.php');

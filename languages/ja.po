@@ -1,0 +1,131 @@
+# Copyright (C) 2020 qrac
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Qroko 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/qroko\n"
+"POT-Creation-Date: 2021-01-20T11:58:24+00:00\n"
+"PO-Revision-Date: 2021-01-20 20:59+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Domain: qroko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Theme Name of the theme
+msgid "Qroko"
+msgstr "Qroko"
+
+#. Theme URI of the theme
+msgid "https://github.com/qrac/qroko"
+msgstr "https://github.com/qrac/qroko"
+
+#. Description of the theme
+msgid "A simple WordPress theme for blogging with Gutenberg."
+msgstr "Gutenbergでブログを書くためのシンプルなWordPressテーマ。"
+
+#. Author of the theme
+msgid "qrac"
+msgstr "qrac"
+
+#. Author URI of the theme
+msgid "https://qrac.jp"
+msgstr "https://qrac.jp"
+
+#: components/app-comments.php:13 dist/qroko/components/app-comments.php:13
+msgid "Comment"
+msgstr "コメント"
+
+#: components/article-category.php:12
+#: dist/qroko/components/article-category.php:12
+msgid "Category"
+msgstr "カテゴリー"
+
+#: components/article-date.php:9 dist/qroko/components/article-date.php:9
+msgid "Published"
+msgstr "投稿日"
+
+#: components/article-date.php:14 dist/qroko/components/article-date.php:14
+msgid "Updated"
+msgstr "更新日"
+
+#: components/article-tag.php:10 dist/qroko/components/article-tag.php:10
+msgid "Tag"
+msgstr "タグ"
+
+#: components/article-title.php:8 dist/qroko/components/article-title.php:8
+msgid "Home"
+msgstr "Home"
+
+#: components/article-title.php:10 dist/qroko/components/article-title.php:10
+msgid "Search Results"
+msgstr "検索結果"
+
+#: dist/qroko/functions/customizer.php:16 functions/customizer.php:16
+msgid "Maximum site width"
+msgstr "サイト最大幅"
+
+#: dist/qroko/functions/customizer.php:17 functions/customizer.php:17
+msgid ""
+"Allows you to change the maximum width of your site. The width you set will "
+"also be applied to the block editor. The unit is px."
+msgstr ""
+"サイトの最大幅を変更できます。設定した幅はブロックエディターにも適応されま"
+"す。 ※単位はpx"
+
+#: dist/qroko/functions/customizer.php:34 functions/customizer.php:34
+msgid "Hide thumbnail in page top"
+msgstr "ページ上部のアイキャッチ画像を隠す"
+
+#: dist/qroko/functions/customizer.php:49 functions/customizer.php:49
+msgid "Hide previous/next navigation in post"
+msgstr "投稿の前後ナビゲーションを隠す"
+
+#: dist/qroko/functions/customizer.php:64 functions/customizer.php:64
+msgid "Hide comment field in all post"
+msgstr "すべての投稿でコメント欄を隠す"
+
+#: dist/qroko/functions/menu.php:8 functions/menu.php:8
+msgid "Header Main"
+msgstr "ヘッダーメイン"
+
+#: dist/qroko/functions/pager.php:8 dist/qroko/functions/pagination.php:22
+#: functions/pager.php:8 functions/pagination.php:22
+msgid "Page"
+msgstr "ページ"
+
+#: dist/qroko/functions/pager.php:15 functions/pager.php:15
+msgid "Next page"
+msgstr "次のページ"
+
+#: dist/qroko/functions/pager.php:16 functions/pager.php:16
+msgid "Previous page"
+msgstr "前のページ"
+
+#: dist/qroko/functions/pagination.php:24 functions/pagination.php:24
+msgid "First"
+msgstr "最初"
+
+#: dist/qroko/functions/pagination.php:27 functions/pagination.php:27
+msgid "Prev"
+msgstr "前"
+
+#: dist/qroko/functions/pagination.php:55 functions/pagination.php:55
+msgid "Next"
+msgstr "次"
+
+#: dist/qroko/functions/pagination.php:62 functions/pagination.php:62
+msgid "Last"
+msgstr "最後"
+
+#: dist/qroko/functions/widget.php:9 functions/widget.php:9
+msgid "Custom Widgets"
+msgstr "カスタムウィジェット"
+
+#: pages/404.php:8
+msgid "404"
+msgstr "404"
