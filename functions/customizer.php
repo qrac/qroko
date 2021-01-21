@@ -75,7 +75,7 @@ add_action('customize_register', 'qroko_customize_register');
 
 // Theme mod: Max site width
 function qroko_theme_mod_max_site_width() {
-  return get_theme_mod('qroko_max_site_width', 620);
+  return absint(get_theme_mod('qroko_max_site_width', 620));
 }
 
 // Theme mod: Hide page thumbnail
