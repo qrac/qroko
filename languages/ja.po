@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Qroko 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/qroko\n"
-"POT-Creation-Date: 2021-01-20T11:58:24+00:00\n"
-"PO-Revision-Date: 2021-01-20 20:59+0900\n"
+"POT-Creation-Date: 2021-01-21T14:00:20+00:00\n"
+"PO-Revision-Date: 2021-01-21 23:01+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -40,6 +40,10 @@ msgstr "https://qrac.jp"
 msgid "Comment"
 msgstr "コメント"
 
+#: components/app-header.php:8
+msgid "Skip to content"
+msgstr "コンテンツへスキップ"
+
 #: components/article-category.php:12
 #: dist/qroko/components/article-category.php:12
 msgid "Category"
@@ -65,11 +69,11 @@ msgstr "Home"
 msgid "Search Results"
 msgstr "検索結果"
 
-#: dist/qroko/functions/customizer.php:16 functions/customizer.php:16
+#: dist/qroko/functions/customizer.php:15 functions/customizer.php:15
 msgid "Maximum site width"
 msgstr "サイト最大幅"
 
-#: dist/qroko/functions/customizer.php:17 functions/customizer.php:17
+#: dist/qroko/functions/customizer.php:16 functions/customizer.php:16
 msgid ""
 "Allows you to change the maximum width of your site. The width you set will "
 "also be applied to the block editor. The unit is px."
@@ -77,15 +81,15 @@ msgstr ""
 "サイトの最大幅を変更できます。設定した幅はブロックエディターにも適応されま"
 "す。 ※単位はpx"
 
-#: dist/qroko/functions/customizer.php:34 functions/customizer.php:34
+#: dist/qroko/functions/customizer.php:32 functions/customizer.php:32
 msgid "Hide thumbnail in page top"
 msgstr "ページ上部のアイキャッチ画像を隠す"
 
-#: dist/qroko/functions/customizer.php:49 functions/customizer.php:49
+#: dist/qroko/functions/customizer.php:46 functions/customizer.php:46
 msgid "Hide previous/next navigation in post"
 msgstr "投稿の前後ナビゲーションを隠す"
 
-#: dist/qroko/functions/customizer.php:64 functions/customizer.php:64
+#: dist/qroko/functions/customizer.php:60 functions/customizer.php:60
 msgid "Hide comment field in all post"
 msgstr "すべての投稿でコメント欄を隠す"
 
@@ -126,6 +130,6 @@ msgstr "最後"
 msgid "Custom Widgets"
 msgstr "カスタムウィジェット"
 
-#: pages/404.php:8
+#: dist/qroko/pages/404.php:8 pages/404.php:8
 msgid "404"
 msgstr "404"

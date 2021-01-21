@@ -10,7 +10,7 @@
   <?php wp_body_open(); ?>
   <?php get_template_part('components/app-header'); ?>
   <?php get_template_part('components/app-nav'); ?>
-  <main class="app-main">
+  <main class="app-main" id="app-main">
     <?php if (is_404()): ?>
       <?php get_template_part('pages/404'); ?>
     <?php elseif (is_page()): ?>
