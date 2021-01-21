@@ -11,7 +11,7 @@
     echo '<p class="article-category">';
     echo __('Category', 'qroko') . ': ';
     foreach( $categories as $category ) {
-      $output .= '<a href="' . get_category_link($category->term_id) . '">' . $category->cat_name . '</a>' . $separator;
+      $output .= '<a href="' . esc_url(get_category_link($category->term_id)) . '">' . $category->cat_name . '</a>' . $separator;
     }
     echo trim( $output, $separator );
     echo '</p>';
