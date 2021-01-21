@@ -21,7 +21,7 @@ function qroko_pagination($pages = '', $range = 2) {
   if (1 != $pages) {
     echo '<nav class="pagination"><span>' . __('Page', 'qroko') . ': </span>';
     if ($paged > 2 && $paged > $range + 1 && $showitems < $pages) {
-      echo '<a href="' . get_pagenum_link(1) . '">' . __('First', 'qroko') . '</a> / ';
+      echo '<a href="' . esc_url(get_pagenum_link(1)) . '">' . __('First', 'qroko') . '</a> / ';
     }
     if ($paged > 1 && $showitems < $pages) {
       previous_posts_link(__('Prev', 'qroko'));
@@ -35,11 +35,11 @@ function qroko_pagination($pages = '', $range = 2) {
         if ($i == 1) {
           echo $paged == $i
             ? '<span>' . $i . '</span>'
-            : ' / <a href="' . get_pagenum_link($i) . '">' . $i . '</a>';
+            : ' / <a href="' . esc_url(get_pagenum_link($i)) . '">' . $i . '</a>';
         } else {
           echo $paged == $i
             ? ' / <span>' . $i . '</span>'
-            : ' / <a href="' . get_pagenum_link($i) . '">' . $i . '</a>';
+            : ' / <a href="' . esc_url(get_pagenum_link($i)) . '">' . $i . '</a>';
         }
       }
     }
@@ -48,7 +48,7 @@ function qroko_pagination($pages = '', $range = 2) {
       $paged + $range - 1 < $pages &&
       $showitems < $pages
     ) {
-      echo ' / <a href="' . get_pagenum_link($paged + 1) . '">...</a>';
+      echo ' / <a href="' . esc_url(get_pagenum_link($paged + 1)) . '">...</a>';
     }
     if ($paged < $pages && $showitems < $pages) {
       echo ' / ';
@@ -59,7 +59,7 @@ function qroko_pagination($pages = '', $range = 2) {
       $paged + $range - 1 < $pages &&
       $showitems < $pages
     ) {
-      echo ' / <a href="' . get_pagenum_link($pages) . '">' . __('Last', 'qroko') . '</a>';
+      echo ' / <a href="' . esc_url(get_pagenum_link($pages)) . '">' . __('Last', 'qroko') . '</a>';
     }
     echo "</nav>";
   }
