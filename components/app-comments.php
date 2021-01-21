@@ -4,7 +4,7 @@
 //----------------------------------------------------
 ?>
 <?php
-  $qroko_hide_post_comment = get_option('qroko_hide_post_comment');
+  $qroko_hide_post_comment = qroko_theme_mod_hide_post_comment();
   if (!$qroko_hide_post_comment):
 ?>
   <?php if (comments_open()): ?>
