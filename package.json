@@ -1,6 +1,6 @@
 {
-  "name": "qroko-wp-theme",
-  "repository": "https://qrac@github.com/qrac/qroko-wp-theme.git",
+  "name": "qroko",
+  "repository": "https://qrac@github.com/qrac/qroko.git",
   "license": "GPL-2.0+",
   "author": {
     "name": "Qrac",
