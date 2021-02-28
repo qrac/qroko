@@ -34,7 +34,6 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 ### Qroko
 
 - Qroko Functions ([repo](https://github.com/qrac/qroko-functions))
-- Qroko My Functions ([repo](https://github.com/qrac/qroko-my-functions)/[download](https://github.com/qrac/qroko-my-functions/archive/master.zip))
 - Qroko Blocks ([site](https://wordpress.org/plugins/qroko-blocks/)/[repo](https://github.com/qrac/qroko-blocks))
 
 ### WPGraphQL
@@ -70,7 +69,7 @@ Qroko は WordPress を headless CMS として使いやすくするためのテ�
 
 ## Gatsby Docs
 
-- [gatsbyjs/gatsby-source-wordpress-experimental](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental)
+- [gatsbyjs/gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress)
 
 ## License
 
